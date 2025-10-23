@@ -1,0 +1,190 @@
+table Sheet1
+	lineageTag: 6c0167b4-f168-42f9-a475-85d5c0ac2cce
+
+	measure 'Rate per 100k Column' = (count([index]) / 88100000 ) * 100000
+		lineageTag: 2198ea34-f07e-47ea-ad94-4e490d1f2850
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Suicides per Year' = ```
+			
+			 COUNT(Sheet1[the date]) / DISTINCTCOUNT(Sheet1[Year])
+			
+			
+			
+			
+			```
+		lineageTag: 4920a341-c0e6-4b79-84da-b9efd8b4fed8
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Suicides per Month' = count(sheet1[the date]) / DISTINCTCOUNT(Sheet1[Year]) / 12
+		lineageTag: b37364a1-d4e7-4112-812a-d603259a4d7e
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Index
+		dataType: int64
+		formatString: 0
+		lineageTag: 3157f19b-65dd-42ee-b081-89da1233a66f
+		summarizeBy: none
+		sourceColumn: Index
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'the date'
+		dataType: int64
+		formatString: 0
+		lineageTag: 1c985e19-13a1-479c-adb6-6e41948e10b1
+		summarizeBy: sum
+		sourceColumn: the date
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'History of the incident'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 212754c9-1644-40c0-98b1-3270ef5c6967
+		summarizeBy: none
+		sourceColumn: History of the incident
+
+		variation Variation
+			isDefault
+			relationship: 667b24f2-753e-4cb6-88e6-df2018afbb31
+			defaultHierarchy: LocalDateTable_7c91bbd2-6caf-46fb-a71f-1d3c49d30401.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column Territories
+		dataType: string
+		lineageTag: e8d8a666-3665-4f68-9376-640c0f7b561b
+		summarizeBy: none
+		sourceColumn: Territories
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'The incident governorate'
+		dataType: string
+		lineageTag: 05bca6e5-4aee-4eea-8a8e-696e66be574f
+		summarizeBy: none
+		sourceColumn: The incident governorate
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'The workplace type'
+		dataType: string
+		lineageTag: 65c9e876-27fd-4c4d-aa5f-486a71f422c3
+		summarizeBy: none
+		sourceColumn: The workplace type
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Type of incident'
+		dataType: string
+		lineageTag: 8cb77074-5e1a-41b7-86ed-1583eede52c4
+		summarizeBy: none
+		sourceColumn: Type of incident
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Suicide method'
+		dataType: string
+		lineageTag: 7cd4ee71-2e1b-4f39-b482-6c7575bdf70c
+		summarizeBy: none
+		sourceColumn: Suicide method
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'The reason for suicide'
+		dataType: string
+		lineageTag: 276e6d3c-8371-46f1-b52b-c4de3f32bdb3
+		summarizeBy: none
+		sourceColumn: The reason for suicide
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Suicide background'
+		dataType: string
+		lineageTag: 1c987539-788e-46f8-9b50-920e86eb9ce1
+		summarizeBy: none
+		sourceColumn: Suicide background
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'The age group'
+		dataType: string
+		lineageTag: b1ea1e1d-26db-4ba3-9346-488a204a52a3
+		summarizeBy: none
+		sourceColumn: The age group
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'the age'
+		dataType: int64
+		formatString: 0
+		lineageTag: 6e289020-8dd3-4245-bea7-4947bb7c8e7c
+		summarizeBy: sum
+		sourceColumn: the age
+
+		annotation SummarizationSetBy = Automatic
+
+	column Gender
+		dataType: string
+		lineageTag: 0e12d8bc-565c-4518-a765-e21d0be18096
+		summarizeBy: none
+		sourceColumn: Gender
+
+		annotation SummarizationSetBy = Automatic
+
+	column Nationality
+		dataType: string
+		lineageTag: 8a8d0523-7f42-4b1c-80a2-bca21afe4c69
+		summarizeBy: none
+		sourceColumn: Nationality
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'The functional category'
+		dataType: string
+		lineageTag: ccb4e40b-fba1-4499-a1d0-ce810033036e
+		summarizeBy: none
+		sourceColumn: The functional category
+
+		annotation SummarizationSetBy = Automatic
+
+	column Year = VALUE(Sheet1[the date])
+		formatString: 0
+		lineageTag: f4062c56-d4f0-4733-af10-8302667639bc
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Sheet1 = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("C:\Projects\Suicides in Egypt\Data\suicides_in_egypt_en.xlsx"), null, true),
+				    Sheet1_Sheet = Source{[Item="Sheet1",Kind="Sheet"]}[Data],
+				    #"Promoted Headers" = Table.PromoteHeaders(Sheet1_Sheet, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"Index", Int64.Type}, {"the date", Int64.Type}, {"History of the incident", type datetime}, {"Territories", type text}, {"The incident governorate", type text}, {"The workplace type", type text}, {"Type of incident", type text}, {"Suicide", type text}, {"The reason for suicide", type text}, {"Suicide background", type text}, {"The age group", type text}, {"the age", Int64.Type}, {"Gender", type text}, {"Nationality", type text}, {"The functional category", type text}}),
+				    #"Replaced Value" = Table.ReplaceValue(#"Changed Type","Lake","Beheira",Replacer.ReplaceText,{"The incident governorate"}),
+				    #"Renamed Columns" = Table.RenameColumns(#"Replaced Value",{{"Suicide", "Suicide method"}}),
+				    #"Replaced Value1" = Table.ReplaceValue(#"Renamed Columns","Oriental","Al Sharqia",Replacer.ReplaceText,{"The incident governorate"}),
+				    #"Replaced Value2" = Table.ReplaceValue(#"Replaced Value1","Western","Gharbiyya",Replacer.ReplaceText,{"The incident governorate"}),
+				    #"Replaced Value3" = Table.ReplaceValue(#"Replaced Value2","Proportional","Matrouh",Replacer.ReplaceText,{"The incident governorate"}),
+				    #"Replaced Value4" = Table.ReplaceValue(#"Replaced Value3","Satisfaction","Pathological",Replacer.ReplaceText,{"Suicide background"}),
+				    #"Replaced Value5" = Table.ReplaceValue(#"Replaced Value4","verbatim","Craftsman",Replacer.ReplaceText,{"The functional category"}),
+				    #"Replaced Value6" = Table.ReplaceValue(#"Replaced Value5","factor","Worker",Replacer.ReplaceText,{"The functional category"}),
+				    #"Replaced Value7" = Table.ReplaceValue(#"Replaced Value6","farms","farmer",Replacer.ReplaceText,{"The functional category"}),
+				    #"Replaced Value8" = Table.ReplaceValue(#"Replaced Value7","Menoufia","Monufia",Replacer.ReplaceText,{"The incident governorate"}),
+				    #"Replaced Value9" = Table.ReplaceValue(#"Replaced Value8","Assiut","Asyut",Replacer.ReplaceText,{"The incident governorate"}),
+				    #"Replaced Value10" = Table.ReplaceValue(#"Replaced Value9","Fayoum","Faiyum",Replacer.ReplaceText,{"The incident governorate"}),
+				    #"Replaced Value11" = Table.ReplaceValue(#"Replaced Value10","Kafr El -Sheikh","Kafr el-Sheikh",Replacer.ReplaceText,{"The incident governorate"}),
+				    #"Replaced Value12" = Table.ReplaceValue(#"Replaced Value11","Qaliubiya","Qalyubia",Replacer.ReplaceText,{"The incident governorate"})
+				in
+				    #"Replaced Value12"
+
+	annotation PBI_ResultType = Exception
+
+	annotation PBI_NavigationStepName = Navigation
+

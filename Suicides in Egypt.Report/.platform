@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Suicides in Egypt"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "eee33563-6a7b-448e-aea7-a72930837792"
+  }
+}

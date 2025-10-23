@@ -1,0 +1,89 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
+  "name": "c5515610d3a86054e362",
+  "position": {
+    "x": 62,
+    "y": 754,
+    "z": 13000,
+    "height": 348,
+    "width": 668,
+    "tabOrder": 13000
+  },
+  "visual": {
+    "visualType": "pythonVisual",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Sheet1"
+                    }
+                  },
+                  "Property": "Index"
+                }
+              },
+              "queryRef": "Sheet1.Index",
+              "nativeQueryRef": "Index"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Sheet1"
+                    }
+                  },
+                  "Property": "the age"
+                }
+              },
+              "queryRef": "Sheet1.the age",
+              "nativeQueryRef": "the age"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "script": [
+        {
+          "properties": {
+            "source": {
+              "expr": {
+                "Literal": {
+                  "Value": "'import seaborn as sns\nimport matplotlib.pyplot as plt\nimport pandas as pd\n\n\nsns.set(font=\"Bahnschrift\", font_scale=1)\nplt.figure(figsize=(10, 5))\nplt.gca().set_facecolor(\"#ffffff\") \n\nsns.histplot(data=dataset, x=''the age'',  bins=15, color=\"#f63636\", edgecolor=\"#f63636\", alpha=0.9)\n\nplt.title('''')\nplt.xlabel(''Age'', fontsize=14, color=''grey'')\nplt.ylabel(''Number of Cases'', fontsize=14, color=''grey'')\n\nplt.xticks(range(10, 91, 5), color=''grey'', fontsize=12)\nplt.yticks(color=''grey'', fontsize=14)\n\nplt.grid(axis=''y'', color=\"#c8c6c4\", linestyle=''--'', linewidth=1, alpha=0.7)\nplt.gca().set_axisbelow(True)\nplt.gca().spines[''top''].set_visible(False)\nplt.gca().spines[''right''].set_visible(False)\nplt.gca().spines[''left''].set_visible(False)\nplt.gca().spines[''bottom''].set_visible(False)\n\nplt.tight_layout()\nplt.show()'"
+                }
+              }
+            },
+            "provider": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Python'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

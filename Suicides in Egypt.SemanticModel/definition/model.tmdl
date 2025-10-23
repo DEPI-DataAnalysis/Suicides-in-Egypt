@@ -1,0 +1,21 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation PBI_QueryOrder = ["Sheet1","seasons"]
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_ProTooling = ["DaxQueryView_Desktop","DevMode"]
+
+ref table DateTableTemplate_f26eed46-ac3d-42e6-a016-3619f527c688
+ref table Sheet1
+ref table LocalDateTable_7c91bbd2-6caf-46fb-a71f-1d3c49d30401
+ref table seasons
+
+ref cultureInfo en-US
+

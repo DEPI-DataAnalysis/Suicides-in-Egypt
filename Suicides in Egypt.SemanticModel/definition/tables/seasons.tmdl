@@ -1,0 +1,32 @@
+table seasons
+	lineageTag: da0551bd-92f7-48c1-8205-b487674f6415
+
+	column index
+		dataType: int64
+		formatString: 0
+		lineageTag: be4e6fbb-7750-4eb0-ba4a-69aee94e971e
+		summarizeBy: none
+		sourceColumn: index
+
+		annotation SummarizationSetBy = Automatic
+
+	column season
+		dataType: string
+		lineageTag: f50ca453-92bb-4435-b969-fd4bc7b73f8f
+		summarizeBy: none
+		sourceColumn: season
+
+		annotation SummarizationSetBy = Automatic
+
+	partition seasons = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("C:\Projects\Suicides in Egypt\Data\seasons.csv"),[Delimiter=",", Columns=2, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"index", Int64.Type}, {"season", type text}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+
