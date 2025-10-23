@@ -7,7 +7,7 @@
     "z": 19000,
     "height": 49.180327868852459,
     "width": 159.01639344262296,
-    "tabOrder": 18000
+    "tabOrder": 17000
   },
   "visual": {
     "visualType": "textbox",
@@ -21,6 +21,7 @@
                   {
                     "value": "Filter Pane",
                     "textStyle": {
+                      "fontWeight": "bold",
                       "fontFamily": "DIN",
                       "fontSize": "24pt",
                       "color": "#000000"

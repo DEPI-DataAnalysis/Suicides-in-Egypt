@@ -4,7 +4,7 @@
   "position": {
     "x": 0,
     "y": 0,
-    "z": 44000,
+    "z": 46000,
     "height": 1150,
     "width": 1426,
     "tabOrder": 54000
@@ -60,7 +60,7 @@
             "transparency": {
               "expr": {
                 "Literal": {
-                  "Value": "80D"
+                  "Value": "100D"
                 }
               }
             },

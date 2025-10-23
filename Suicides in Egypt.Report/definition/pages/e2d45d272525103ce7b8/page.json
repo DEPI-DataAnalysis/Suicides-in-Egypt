@@ -47,6 +47,23 @@
           }
         }
       }
+    ],
+    "outspace": [
+      {
+        "properties": {
+          "color": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'#F9F9F9'"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     ]
   }
 }

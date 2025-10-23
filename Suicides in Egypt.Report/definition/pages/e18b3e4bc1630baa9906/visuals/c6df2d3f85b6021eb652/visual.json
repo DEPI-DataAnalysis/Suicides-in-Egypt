@@ -1,51 +1,25 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
-  "name": "8ec6c1d087407005674d",
+  "name": "c6df2d3f85b6021eb652",
   "position": {
-    "x": 1314.0350877192982,
-    "y": 73.6842105263158,
-    "z": 43000,
-    "height": 50.877192982456144,
-    "width": 50.292397660818715,
-    "tabOrder": 56000
+    "x": 7,
+    "y": 3,
+    "z": 44000,
+    "height": 47,
+    "width": 38
   },
   "visual": {
-    "visualType": "actionButton",
+    "visualType": "image",
     "objects": {
-      "icon": [
+      "general": [
         {
           "properties": {
-            "shapeType": {
+            "imageUrl": {
               "expr": {
-                "Literal": {
-                  "Value": "'blank'"
-                }
-              }
-            }
-          },
-          "selector": {
-            "id": "default"
-          }
-        },
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "outline": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
+                "ResourcePackageItem": {
+                  "PackageName": "RegisteredResources",
+                  "PackageType": 1,
+                  "ItemName": "filter_11775046720481128.png"
                 }
               }
             }
@@ -84,6 +58,6 @@
     },
     "drillFilterOtherVisuals": true
   },
-  "isHidden": true,
+  "parentGroupName": "909104c807466521ffc9",
   "howCreated": "InsertVisualButton"
 }

@@ -7,7 +7,7 @@
     "z": 17000,
     "height": 1150,
     "width": 1425,
-    "tabOrder": 17000
+    "tabOrder": 16000
   },
   "visual": {
     "visualType": "shape",
@@ -60,7 +60,7 @@
             "transparency": {
               "expr": {
                 "Literal": {
-                  "Value": "80D"
+                  "Value": "100D"
                 }
               }
             },
