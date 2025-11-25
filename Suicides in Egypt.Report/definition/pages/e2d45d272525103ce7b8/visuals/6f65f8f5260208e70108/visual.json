@@ -7,7 +7,7 @@
     "z": 8000,
     "height": 352,
     "width": 1302,
-    "tabOrder": 4000
+    "tabOrder": 3000
   },
   "visual": {
     "visualType": "tableEx",
@@ -140,6 +140,48 @@
               },
               "queryRef": "Sheet1.The reason for suicide",
               "nativeQueryRef": "The reason for suicide"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Sheet1"
+                    }
+                  },
+                  "Property": "the age"
+                }
+              },
+              "queryRef": "Sheet1.the age",
+              "nativeQueryRef": "the age"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Sheet1"
+                    }
+                  },
+                  "Property": "The workplace type"
+                }
+              },
+              "queryRef": "Sheet1.The workplace type",
+              "nativeQueryRef": "The workplace type"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Sheet1"
+                    }
+                  },
+                  "Property": "Type of incident"
+                }
+              },
+              "queryRef": "Sheet1.Type of incident",
+              "nativeQueryRef": "Type of incident"
             }
           ]
         }
@@ -154,7 +196,7 @@
                     "Entity": "Sheet1"
                   }
                 },
-                "Property": "The incident governorate"
+                "Property": "History of the incident"
               }
             },
             "direction": "Ascending"
