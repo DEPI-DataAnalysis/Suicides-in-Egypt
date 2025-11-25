@@ -7,7 +7,7 @@
     "z": 18000,
     "height": 306,
     "width": 484,
-    "tabOrder": 19000
+    "tabOrder": 17000
   },
   "visual": {
     "visualType": "donutChart",
@@ -531,6 +531,13 @@
                           {
                             "Literal": {
                               "Value": "'Unavoidable'"
+                            }
+                          }
+                        ],
+                        [
+                          {
+                            "Literal": {
+                              "Value": "'Others'"
                             }
                           }
                         ]

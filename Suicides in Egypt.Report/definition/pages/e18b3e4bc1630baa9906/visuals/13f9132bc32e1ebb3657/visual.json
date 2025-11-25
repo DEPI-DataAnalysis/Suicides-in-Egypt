@@ -7,7 +7,7 @@
     "z": 15000,
     "height": 56.666666666666671,
     "width": 326.66666666666669,
-    "tabOrder": 15000
+    "tabOrder": 13000
   },
   "visual": {
     "visualType": "textbox",
@@ -19,7 +19,7 @@
               {
                 "textRuns": [
                   {
-                    "value": "Suicides Over the Years",
+                    "value": "Incidents Over the Years",
                     "textStyle": {
                       "fontWeight": "bold",
                       "fontFamily": "DIN",

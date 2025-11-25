@@ -4,10 +4,10 @@
   "position": {
     "x": 898,
     "y": 710,
-    "z": 20000,
-    "height": 64,
-    "width": 302,
-    "tabOrder": 21000
+    "z": 46500,
+    "height": 56,
+    "width": 248,
+    "tabOrder": 19000
   },
   "visual": {
     "visualType": "textbox",
@@ -19,7 +19,7 @@
               {
                 "textRuns": [
                   {
-                    "value": "Suicides by Territory",
+                    "value": "Suicide Method",
                     "textStyle": {
                       "fontWeight": "bold",
                       "fontFamily": "DIN",

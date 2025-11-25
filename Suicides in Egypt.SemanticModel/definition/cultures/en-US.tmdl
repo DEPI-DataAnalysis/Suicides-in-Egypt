@@ -194,12 +194,6 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "date": {
-			            "State": "Generated",
-			            "Weight": 0.7
-			          }
-			        },
-			        {
 			          "antiquity of the incident": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -299,51 +293,279 @@ cultureInfo en-US
 			            "Weight": 0.474
 			          }
 			        }
-			      ],
-			      "SemanticType": "Time"
+			      ]
 			    },
-			    "sheet_1.history_of_the_incident.date_hierarchy": {
+			    "sheet_1.display_category": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Sheet1",
-			          "VariationSource": "History of the incident",
-			          "VariationSet": "Variation",
-			          "Hierarchy": "Date Hierarchy"
+			          "ConceptualProperty": "Display_Category"
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "history of the incident date hierarchy": {
+			          "display category": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "date hierarchy": {
+			          "Display_Category": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "category": {
 			            "State": "Generated",
 			            "Weight": 0.97
 			          }
+			        },
+			        {
+			          "display classification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "classification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "display class": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "display group": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "display type": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "display grouping": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "display kind": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "class": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "grouping": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "kind": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "Occupation": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
-			      ],
-			      "SemanticType": "Time"
+			      ]
 			    },
-			    "sheet_1.history_of_the_incident.year": {
+			    "sheet_1.sort_column": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Sheet1",
-			          "VariationSource": "History of the incident",
-			          "VariationSet": "Variation",
-			          "Hierarchy": "Date Hierarchy",
-			          "HierarchyLevel": "Year"
+			          "ConceptualProperty": "SortColumn"
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "history of the incident year": {
+			          "sort column": {
 			            "State": "Generated"
 			          }
 			        },
+			        {
+			          "SortColumn": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "sort pilaster": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "sort pier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "sort pillar": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "sort post": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "sort support": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "sort stake": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "sort pole": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "sort buttress": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "sort underpinning": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "sort contribution": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        }
+			      ]
+			    },
+			    "sheet_1.year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Sheet1",
+			          "ConceptualProperty": "Year"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
 			        {
 			          "year": {
 			            "State": "Generated"
@@ -358,474 +580,8 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.736
 			          }
-			        },
-			        {
-			          "history of the incident yr": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.624
-			          }
-			        },
-			        {
-			          "antiquity of the incident year": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.52
-			          }
-			        },
-			        {
-			          "past of the incident year": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.504
-			          }
-			        },
-			        {
-			          "narration of the incident year": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.494
-			          }
-			        },
-			        {
-			          "saga of the incident year": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.494
-			          }
-			        },
-			        {
-			          "description of the incident year": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.494
-			          }
-			        },
-			        {
-			          "memoire of the incident year": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.494
-			          }
-			        },
-			        {
-			          "memoir of the incident year": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.494
-			          }
-			        },
-			        {
-			          "account of the incident year": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.479
-			          }
 			        }
-			      ],
-			      "SemanticType": "Time"
-			    },
-			    "sheet_1.history_of_the_incident.quarter": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Sheet1",
-			          "VariationSource": "History of the incident",
-			          "VariationSet": "Variation",
-			          "Hierarchy": "Date Hierarchy",
-			          "HierarchyLevel": "Quarter"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "history of the incident quarter": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "quarter": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "qtr": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.818
-			          }
-			        },
-			        {
-			          "history of the incident qtr": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.693
-			          }
-			        },
-			        {
-			          "antiquity of the incident quarter": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.52
-			          }
-			        },
-			        {
-			          "past of the incident quarter": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.504
-			          }
-			        },
-			        {
-			          "narration of the incident quarter": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.494
-			          }
-			        },
-			        {
-			          "saga of the incident quarter": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.494
-			          }
-			        },
-			        {
-			          "description of the incident quarter": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.494
-			          }
-			        },
-			        {
-			          "memoire of the incident quarter": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.494
-			          }
-			        },
-			        {
-			          "memoir of the incident quarter": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.494
-			          }
-			        },
-			        {
-			          "account of the incident quarter": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.479
-			          }
-			        }
-			      ],
-			      "SemanticType": "Time"
-			    },
-			    "sheet_1.history_of_the_incident.month": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Sheet1",
-			          "VariationSource": "History of the incident",
-			          "VariationSet": "Variation",
-			          "Hierarchy": "Date Hierarchy",
-			          "HierarchyLevel": "Month"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "history of the incident month": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "month": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "mth": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "history of the incident mth": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.624
-			          }
-			        },
-			        {
-			          "antiquity of the incident month": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.52
-			          }
-			        },
-			        {
-			          "past of the incident month": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.504
-			          }
-			        },
-			        {
-			          "narration of the incident month": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.494
-			          }
-			        },
-			        {
-			          "saga of the incident month": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.494
-			          }
-			        },
-			        {
-			          "description of the incident month": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.494
-			          }
-			        },
-			        {
-			          "memoire of the incident month": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.494
-			          }
-			        },
-			        {
-			          "memoir of the incident month": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.494
-			          }
-			        },
-			        {
-			          "account of the incident month": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.479
-			          }
-			        }
-			      ],
-			      "SemanticType": "Time"
-			    },
-			    "sheet_1.history_of_the_incident.day": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Sheet1",
-			          "VariationSource": "History of the incident",
-			          "VariationSet": "Variation",
-			          "Hierarchy": "Date Hierarchy",
-			          "HierarchyLevel": "Day"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "history of the incident day": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "day": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "antiquity of the incident day": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.52
-			          }
-			        },
-			        {
-			          "past of the incident day": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.504
-			          }
-			        },
-			        {
-			          "narration of the incident day": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.494
-			          }
-			        },
-			        {
-			          "saga of the incident day": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.494
-			          }
-			        },
-			        {
-			          "description of the incident day": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.494
-			          }
-			        },
-			        {
-			          "memoire of the incident day": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.494
-			          }
-			        },
-			        {
-			          "memoir of the incident day": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.494
-			          }
-			        },
-			        {
-			          "account of the incident day": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.479
-			          }
-			        },
-			        {
-			          "record of the incident day": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.479
-			          }
-			        },
-			        {
-			          "story of the incident day": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.479
-			          }
-			        }
-			      ],
-			      "SemanticType": "Time"
+			      ]
 			    },
 			    "sheet_1.territory": {
 			      "Definition": {
@@ -2024,16 +1780,6 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.739
 			          }
-			        },
-			        {
-			          "Occupation": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -2163,7 +1909,7 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "sheet_1.suicides_by_year": {
+			    "sheet_1.suicides_per_year": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Sheet1",
@@ -2173,7 +1919,7 @@ cultureInfo en-US
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "suicides by year": {
+			          "suicides per year": {
 			            "State": "Generated"
 			          }
 			        },
@@ -2184,7 +1930,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "suicide by yr": {
+			          "suicide per yr": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -2194,7 +1940,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "perversity by year": {
+			          "perversity per year": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -2215,7 +1961,7 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "sheet_1.suicides_by_month": {
+			    "sheet_1.suicides_per_month": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Sheet1",
@@ -2225,7 +1971,7 @@ cultureInfo en-US
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "suicides by month": {
+			          "suicides per month": {
 			            "State": "Generated"
 			          }
 			        },
@@ -2236,7 +1982,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "suicide by mth": {
+			          "suicide per mth": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -2246,7 +1992,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "perversity by month": {
+			          "perversity per month": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -2477,171 +2223,6 @@ cultureInfo en-US
 			    }
 			  },
 			  "Relationships": {
-			    "sheet_1_history_of_the_incident_date_hierarchy_has_sheet_1_history_of_the_incident_month": {
-			      "Binding": {
-			        "ConceptualEntity": "Sheet1"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "sheet_1.history_of_the_incident.date_hierarchy": {
-			          "Target": {
-			            "Entity": "sheet_1.history_of_the_incident.date_hierarchy"
-			          }
-			        },
-			        "sheet_1.history_of_the_incident.month": {
-			          "Target": {
-			            "Entity": "sheet_1.history_of_the_incident.month"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "sheet_1.history_of_the_incident.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "sheet_1.history_of_the_incident.month"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "history_of_the_incident_date_hierarchy_have_history_of_the_incident_month"
-			        }
-			      ]
-			    },
-			    "sheet_1_history_of_the_incident_date_hierarchy_has_sheet_1_history_of_the_incident_quarter": {
-			      "Binding": {
-			        "ConceptualEntity": "Sheet1"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "sheet_1.history_of_the_incident.date_hierarchy": {
-			          "Target": {
-			            "Entity": "sheet_1.history_of_the_incident.date_hierarchy"
-			          }
-			        },
-			        "sheet_1.history_of_the_incident.quarter": {
-			          "Target": {
-			            "Entity": "sheet_1.history_of_the_incident.quarter"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "sheet_1.history_of_the_incident.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "sheet_1.history_of_the_incident.quarter"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "history_of_the_incident_date_hierarchy_have_history_of_the_incident_quarter"
-			        }
-			      ]
-			    },
-			    "sheet_1_history_of_the_incident_date_hierarchy_has_sheet_1_history_of_the_incident_year": {
-			      "Binding": {
-			        "ConceptualEntity": "Sheet1"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "sheet_1.history_of_the_incident.date_hierarchy": {
-			          "Target": {
-			            "Entity": "sheet_1.history_of_the_incident.date_hierarchy"
-			          }
-			        },
-			        "sheet_1.history_of_the_incident.year": {
-			          "Target": {
-			            "Entity": "sheet_1.history_of_the_incident.year"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "sheet_1.history_of_the_incident.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "sheet_1.history_of_the_incident.year"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "history_of_the_incident_date_hierarchy_have_history_of_the_incident_year"
-			        }
-			      ]
-			    },
-			    "sheet_1_history_of_the_incident_has_date_hierarchy": {
-			      "Binding": {
-			        "ConceptualEntity": "Sheet1"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "sheet_1.history_of_the_incident": {
-			          "Target": {
-			            "Entity": "sheet_1.history_of_the_incident"
-			          }
-			        },
-			        "sheet_1.history_of_the_incident.date_hierarchy": {
-			          "Target": {
-			            "Entity": "sheet_1.history_of_the_incident.date_hierarchy"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "sheet_1.history_of_the_incident"
-			            },
-			            "Object": {
-			              "Role": "sheet_1.history_of_the_incident.date_hierarchy"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "history_of_the_incident_have_history_of_the_incident_date_hierarchy"
-			        }
-			      ]
-			    },
-			    "season_has_sheet_1": {
-			      "Binding": {
-			        "ConceptualEntity": "seasons"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "season": {
-			          "Target": {
-			            "Entity": "season"
-			          }
-			        },
-			        "sheet_1": {
-			          "Target": {
-			            "Entity": "sheet_1"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "season"
-			            },
-			            "Object": {
-			              "Role": "sheet_1"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "seasons_have_sheet_1"
-			        }
-			      ]
-			    },
 			    "sheet_1_has_season": {
 			      "Binding": {
 			        "ConceptualEntity": "Sheet1"
@@ -2741,7 +2322,7 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "sheet_1_has_suicides_by_month": {
+			    "sheet_1_has_suicides_per_month": {
 			      "Binding": {
 			        "ConceptualEntity": "Sheet1"
 			      },
@@ -2752,9 +2333,9 @@ cultureInfo en-US
 			            "Entity": "sheet_1"
 			          }
 			        },
-			        "sheet_1.suicides_by_month": {
+			        "sheet_1.suicides_per_month": {
 			          "Target": {
-			            "Entity": "sheet_1.suicides_by_month"
+			            "Entity": "sheet_1.suicides_per_month"
 			          }
 			        }
 			      },
@@ -2765,16 +2346,16 @@ cultureInfo en-US
 			              "Role": "sheet_1"
 			            },
 			            "Object": {
-			              "Role": "sheet_1.suicides_by_month"
+			              "Role": "sheet_1.suicides_per_month"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "sheet_1_have_suicides_by_month"
+			          "ID": "sheet_1_have_suicides_per_month"
 			        }
 			      ]
 			    },
-			    "sheet_1_has_suicides_by_year": {
+			    "sheet_1_has_suicides_per_year": {
 			      "Binding": {
 			        "ConceptualEntity": "Sheet1"
 			      },
@@ -2785,9 +2366,9 @@ cultureInfo en-US
 			            "Entity": "sheet_1"
 			          }
 			        },
-			        "sheet_1.suicides_by_year": {
+			        "sheet_1.suicides_per_year": {
 			          "Target": {
-			            "Entity": "sheet_1.suicides_by_year"
+			            "Entity": "sheet_1.suicides_per_year"
 			          }
 			        }
 			      },
@@ -2798,12 +2379,12 @@ cultureInfo en-US
 			              "Role": "sheet_1"
 			            },
 			            "Object": {
-			              "Role": "sheet_1.suicides_by_year"
+			              "Role": "sheet_1.suicides_per_year"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "sheet_1_have_suicides_by_year"
+			          "ID": "sheet_1_have_suicides_per_year"
 			        }
 			      ]
 			    },
@@ -3267,6 +2848,105 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
+			    "sheet_1_has_year": {
+			      "Binding": {
+			        "ConceptualEntity": "Sheet1"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "sheet_1": {
+			          "Target": {
+			            "Entity": "sheet_1"
+			          }
+			        },
+			        "sheet_1.year": {
+			          "Target": {
+			            "Entity": "sheet_1.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "sheet_1"
+			            },
+			            "Object": {
+			              "Role": "sheet_1.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sheet_1_have_years"
+			        }
+			      ]
+			    },
+			    "sheet_1_has_sort_column": {
+			      "Binding": {
+			        "ConceptualEntity": "Sheet1"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "sheet_1": {
+			          "Target": {
+			            "Entity": "sheet_1"
+			          }
+			        },
+			        "sheet_1.sort_column": {
+			          "Target": {
+			            "Entity": "sheet_1.sort_column"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "sheet_1"
+			            },
+			            "Object": {
+			              "Role": "sheet_1.sort_column"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sheet_1_have_sort_columns"
+			        }
+			      ]
+			    },
+			    "sheet_1_has_display_category": {
+			      "Binding": {
+			        "ConceptualEntity": "Sheet1"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "sheet_1": {
+			          "Target": {
+			            "Entity": "sheet_1"
+			          }
+			        },
+			        "sheet_1.display_category": {
+			          "Target": {
+			            "Entity": "sheet_1.display_category"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "sheet_1"
+			            },
+			            "Object": {
+			              "Role": "sheet_1.display_category"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sheet_1_have_display_categories"
+			        }
+			      ]
+			    },
 			    "sheet_1_has_history_of_the_incident": {
 			      "Binding": {
 			        "ConceptualEntity": "Sheet1"
@@ -3366,20 +3046,20 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "sheet_1_history_of_the_incident_date_hierarchy_has_sheet_1_history_of_the_incident_day": {
+			    "season_has_sheet_1": {
 			      "Binding": {
-			        "ConceptualEntity": "Sheet1"
+			        "ConceptualEntity": "seasons"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "sheet_1.history_of_the_incident.date_hierarchy": {
+			        "season": {
 			          "Target": {
-			            "Entity": "sheet_1.history_of_the_incident.date_hierarchy"
+			            "Entity": "season"
 			          }
 			        },
-			        "sheet_1.history_of_the_incident.day": {
+			        "sheet_1": {
 			          "Target": {
-			            "Entity": "sheet_1.history_of_the_incident.day"
+			            "Entity": "sheet_1"
 			          }
 			        }
 			      },
@@ -3387,15 +3067,15 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "sheet_1.history_of_the_incident.date_hierarchy"
+			              "Role": "season"
 			            },
 			            "Object": {
-			              "Role": "sheet_1.history_of_the_incident.day"
+			              "Role": "sheet_1"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "history_of_the_incident_date_hierarchy_have_history_of_the_incident_day"
+			          "ID": "seasons_have_sheet_1"
 			        }
 			      ]
 			    }

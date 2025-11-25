@@ -7,7 +7,7 @@
     "z": 14000,
     "height": 265,
     "width": 770,
-    "tabOrder": 14000
+    "tabOrder": 12000
   },
   "visual": {
     "visualType": "areaChart",
@@ -75,10 +75,9 @@
                 "Function": 5
               }
             },
-            "direction": "Descending"
+            "direction": "Ascending"
           }
-        ],
-        "isDefaultSort": true
+        ]
       }
     },
     "objects": {

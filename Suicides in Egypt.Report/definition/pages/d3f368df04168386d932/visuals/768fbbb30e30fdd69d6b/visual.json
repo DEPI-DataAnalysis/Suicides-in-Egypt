@@ -6,8 +6,8 @@
     "y": 150,
     "z": 9000,
     "height": 54,
-    "width": 322,
-    "tabOrder": 8000
+    "width": 334,
+    "tabOrder": 6000
   },
   "visual": {
     "visualType": "textbox",
@@ -19,7 +19,7 @@
               {
                 "textRuns": [
                   {
-                    "value": "Suicides by Region",
+                    "value": "Incidents by Region",
                     "textStyle": {
                       "fontWeight": "bold",
                       "fontFamily": "DIN",

@@ -7,7 +7,7 @@
     "z": 10000,
     "height": 126.66666666666666,
     "width": 239.44444444444443,
-    "tabOrder": 9000
+    "tabOrder": 7000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -266,6 +266,5 @@
         "howCreated": "User"
       }
     ]
-  },
-  "isHidden": true
+  }
 }

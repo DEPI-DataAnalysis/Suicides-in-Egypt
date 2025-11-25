@@ -6,11 +6,11 @@
     "y": 74.375,
     "z": 45500,
     "height": 51.25,
-    "width": 51.875,
-    "tabOrder": 2000
+    "width": 51.875
   },
   "visualGroup": {
     "displayName": "Group 1",
     "groupMode": "ScaleMode"
-  }
+  },
+  "isHidden": true
 }

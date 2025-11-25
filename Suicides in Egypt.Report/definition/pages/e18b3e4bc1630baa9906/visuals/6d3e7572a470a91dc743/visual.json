@@ -7,7 +7,7 @@
     "z": 37000,
     "height": 174.66666666666666,
     "width": 69.333333333333329,
-    "tabOrder": 37000
+    "tabOrder": 35000
   },
   "visual": {
     "visualType": "shape",
@@ -226,5 +226,6 @@
     },
     "drillFilterOtherVisuals": true
   },
+  "isHidden": true,
   "howCreated": "InsertVisualButton"
 }

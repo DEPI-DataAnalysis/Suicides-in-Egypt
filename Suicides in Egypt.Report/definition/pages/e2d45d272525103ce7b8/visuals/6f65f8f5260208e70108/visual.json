@@ -7,7 +7,7 @@
     "z": 8000,
     "height": 352,
     "width": 1302,
-    "tabOrder": 6000
+    "tabOrder": 4000
   },
   "visual": {
     "visualType": "tableEx",
@@ -17,24 +17,13 @@
           "projections": [
             {
               "field": {
-                "HierarchyLevel": {
+                "Column": {
                   "Expression": {
-                    "Hierarchy": {
-                      "Expression": {
-                        "PropertyVariationSource": {
-                          "Expression": {
-                            "SourceRef": {
-                              "Entity": "Sheet1"
-                            }
-                          },
-                          "Name": "Variation",
-                          "Property": "History of the incident"
-                        }
-                      },
-                      "Hierarchy": "Date Hierarchy"
+                    "SourceRef": {
+                      "Entity": "Sheet1"
                     }
                   },
-                  "Level": "Year"
+                  "Property": "History of the incident"
                 }
               },
               "queryRef": "Sheet1.History of the incident.Variation.Date Hierarchy.Year",
@@ -159,24 +148,13 @@
         "sort": [
           {
             "field": {
-              "HierarchyLevel": {
+              "Column": {
                 "Expression": {
-                  "Hierarchy": {
-                    "Expression": {
-                      "PropertyVariationSource": {
-                        "Expression": {
-                          "SourceRef": {
-                            "Entity": "Sheet1"
-                          }
-                        },
-                        "Name": "Variation",
-                        "Property": "History of the incident"
-                      }
-                    },
-                    "Hierarchy": "Date Hierarchy"
+                  "SourceRef": {
+                    "Entity": "Sheet1"
                   }
                 },
-                "Level": "Year"
+                "Property": "The incident governorate"
               }
             },
             "direction": "Ascending"
@@ -187,15 +165,7 @@
     "objects": {
       "columnWidth": [
         {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
-                  "Value": "148.95879531146994D"
-                }
-              }
-            }
-          },
+          "properties": {},
           "selector": {
             "metadata": "Sheet1.The functional category"
           }
@@ -205,7 +175,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "165.01711020197595D"
+                  "Value": "148D"
                 }
               }
             }
@@ -215,29 +185,13 @@
           }
         },
         {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
-                  "Value": "100.4293061796585D"
-                }
-              }
-            }
-          },
+          "properties": {},
           "selector": {
             "metadata": "Sheet1.The age group"
           }
         },
         {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
-                  "Value": "45.17241362300697D"
-                }
-              }
-            }
-          },
+          "properties": {},
           "selector": {
             "metadata": "Sheet1.History of the incident.Variation.Date Hierarchy.Year"
           }
@@ -247,7 +201,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "291.25140208927667D"
+                  "Value": "247D"
                 }
               }
             }
@@ -257,29 +211,13 @@
           }
         },
         {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
-                  "Value": "188.1724119638697D"
-                }
-              }
-            }
-          },
+          "properties": {},
           "selector": {
             "metadata": "Sheet1.Suicide"
           }
         },
         {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
-                  "Value": "128.72413766673762D"
-                }
-              }
-            }
-          },
+          "properties": {},
           "selector": {
             "metadata": "Sheet1.Suicide background"
           }

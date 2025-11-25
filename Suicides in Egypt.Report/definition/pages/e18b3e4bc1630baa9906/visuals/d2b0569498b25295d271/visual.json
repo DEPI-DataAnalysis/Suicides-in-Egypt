@@ -7,7 +7,7 @@
     "z": 34000,
     "height": 139,
     "width": 239,
-    "tabOrder": 34000
+    "tabOrder": 32000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -197,5 +197,6 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  }
+  },
+  "isHidden": true
 }

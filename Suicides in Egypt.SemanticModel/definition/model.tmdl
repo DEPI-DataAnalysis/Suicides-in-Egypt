@@ -12,10 +12,10 @@ annotation __PBI_TimeIntelligenceEnabled = 1
 
 annotation PBI_ProTooling = ["DaxQueryView_Desktop","DevMode"]
 
-ref table DateTableTemplate_f26eed46-ac3d-42e6-a016-3619f527c688
 ref table Sheet1
-ref table LocalDateTable_7c91bbd2-6caf-46fb-a71f-1d3c49d30401
 ref table seasons
+ref table DateTableTemplate_41e084d2-e439-4beb-85a2-f98b2a63e90b
+ref table LocalDateTable_4806fedf-a5fe-4aa2-b693-b57492671e80
 
 ref cultureInfo en-US
 

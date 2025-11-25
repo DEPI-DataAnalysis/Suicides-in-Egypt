@@ -24,8 +24,7 @@ table Sheet1
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	column Index
-		dataType: int64
-		formatString: 0
+		dataType: string
 		lineageTag: 3157f19b-65dd-42ee-b081-89da1233a66f
 		summarizeBy: none
 		sourceColumn: Index
@@ -33,27 +32,30 @@ table Sheet1
 		annotation SummarizationSetBy = Automatic
 
 	column 'the date'
-		dataType: int64
-		formatString: 0
+		dataType: string
 		lineageTag: 1c985e19-13a1-479c-adb6-6e41948e10b1
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: the date
 
 		annotation SummarizationSetBy = Automatic
 
 	column 'History of the incident'
 		dataType: dateTime
-		formatString: General Date
+		formatString: Short Date
 		lineageTag: 212754c9-1644-40c0-98b1-3270ef5c6967
 		summarizeBy: none
 		sourceColumn: History of the incident
 
 		variation Variation
 			isDefault
-			relationship: 667b24f2-753e-4cb6-88e6-df2018afbb31
-			defaultHierarchy: LocalDateTable_7c91bbd2-6caf-46fb-a71f-1d3c49d30401.'Date Hierarchy'
+			relationship: 95a407ce-df80-4fb3-a753-ae47fc4550dd
+			defaultHierarchy: LocalDateTable_4806fedf-a5fe-4aa2-b693-b57492671e80.'Date Hierarchy'
+
+		changedProperty = DataType
 
 		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
 
 	column Territories
 		dataType: string
@@ -120,10 +122,9 @@ table Sheet1
 		annotation SummarizationSetBy = Automatic
 
 	column 'the age'
-		dataType: int64
-		formatString: 0
+		dataType: string
 		lineageTag: 6e289020-8dd3-4245-bea7-4947bb7c8e7c
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: the age
 
 		annotation SummarizationSetBy = Automatic
@@ -150,12 +151,34 @@ table Sheet1
 		summarizeBy: none
 		sourceColumn: The functional category
 
+		changedProperty = SortByColumn
+
 		annotation SummarizationSetBy = Automatic
 
 	column Year = VALUE(Sheet1[the date])
 		formatString: 0
 		lineageTag: f4062c56-d4f0-4733-af10-8302667639bc
 		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	column SortColumn =
+			
+			VAR RowCount = CALCULATE(COUNTROWS('Sheet1'), ALLEXCEPT('Sheet1', 'Sheet1'[The functional category]))
+			RETURN
+			IF('Sheet1'[The functional category] = "Others", -1, RowCount)
+		formatString: 0
+		lineageTag: a7236180-3e7a-4ac6-b2a9-95e0382188c2
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	column Display_Category = 'Sheet1'[The functional category]
+		lineageTag: c2f7079e-c709-41fa-b9c5-9dd6e7bf4f4c
+		summarizeBy: none
+		sortByColumn: SortColumn
+
+		changedProperty = SortByColumn
 
 		annotation SummarizationSetBy = Automatic
 
@@ -167,7 +190,8 @@ table Sheet1
 				    Sheet1_Sheet = Source{[Item="Sheet1",Kind="Sheet"]}[Data],
 				    #"Promoted Headers" = Table.PromoteHeaders(Sheet1_Sheet, [PromoteAllScalars=true]),
 				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"Index", Int64.Type}, {"the date", Int64.Type}, {"History of the incident", type datetime}, {"Territories", type text}, {"The incident governorate", type text}, {"The workplace type", type text}, {"Type of incident", type text}, {"Suicide", type text}, {"The reason for suicide", type text}, {"Suicide background", type text}, {"The age group", type text}, {"the age", Int64.Type}, {"Gender", type text}, {"Nationality", type text}, {"The functional category", type text}}),
-				    #"Replaced Value" = Table.ReplaceValue(#"Changed Type","Lake","Beheira",Replacer.ReplaceText,{"The incident governorate"}),
+				    #"Removed Blank Rows" = Table.SelectRows(#"Changed Type", each [Index] <> null and [Index] <> ""),
+				    #"Replaced Value" = Table.ReplaceValue(#"Removed Blank Rows","Lake","Beheira",Replacer.ReplaceText,{"The incident governorate"}),
 				    #"Renamed Columns" = Table.RenameColumns(#"Replaced Value",{{"Suicide", "Suicide method"}}),
 				    #"Replaced Value1" = Table.ReplaceValue(#"Renamed Columns","Oriental","Al Sharqia",Replacer.ReplaceText,{"The incident governorate"}),
 				    #"Replaced Value2" = Table.ReplaceValue(#"Replaced Value1","Western","Gharbiyya",Replacer.ReplaceText,{"The incident governorate"}),
@@ -180,11 +204,27 @@ table Sheet1
 				    #"Replaced Value9" = Table.ReplaceValue(#"Replaced Value8","Assiut","Asyut",Replacer.ReplaceText,{"The incident governorate"}),
 				    #"Replaced Value10" = Table.ReplaceValue(#"Replaced Value9","Fayoum","Faiyum",Replacer.ReplaceText,{"The incident governorate"}),
 				    #"Replaced Value11" = Table.ReplaceValue(#"Replaced Value10","Kafr El -Sheikh","Kafr el-Sheikh",Replacer.ReplaceText,{"The incident governorate"}),
-				    #"Replaced Value12" = Table.ReplaceValue(#"Replaced Value11","Qaliubiya","Qalyubia",Replacer.ReplaceText,{"The incident governorate"})
+				    #"Replaced Value12" = Table.ReplaceValue(#"Replaced Value11","Qaliubiya","Qalyubia",Replacer.ReplaceText,{"The incident governorate"}),
+				    #"Replaced Value13" = Table.ReplaceValue(#"Replaced Value12","Swallowing an insecticide","Ingestion of insecticide",Replacer.ReplaceText,{"Suicide method"}),
+				    #"Replaced Value14" = Table.ReplaceValue(#"Replaced Value13","He jumped from a high place","Jumping from a high place",Replacer.ReplaceText,{"Suicide method"}),
+				    #"Replaced Value Unavoidable" = Table.ReplaceValue(
+				    #"Replaced Value14",
+				    "Unavoidable",
+				    "Others",
+				    Replacer.ReplaceValue,
+				    Table.ColumnNames(#"Replaced Value14")
+				),
+				    #"Replaced Value unknown" = Table.ReplaceValue(
+				    #"Replaced Value Unavoidable",
+				    "unknown",
+				    "Others",
+				    Replacer.ReplaceValue,
+				    Table.ColumnNames(#"Replaced Value Unavoidable")
+				)
 				in
-				    #"Replaced Value12"
+				    #"Replaced Value unknown"
 
-	annotation PBI_ResultType = Exception
+	annotation PBI_ResultType = Table
 
 	annotation PBI_NavigationStepName = Navigation
 

@@ -7,7 +7,7 @@
     "z": 40000,
     "height": 43,
     "width": 90,
-    "tabOrder": 40000
+    "tabOrder": 38000
   },
   "visual": {
     "visualType": "textbox",
@@ -51,5 +51,6 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  }
+  },
+  "isHidden": true
 }

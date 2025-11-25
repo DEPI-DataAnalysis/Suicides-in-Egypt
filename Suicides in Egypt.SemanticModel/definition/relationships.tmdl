@@ -1,11 +1,11 @@
-relationship 667b24f2-753e-4cb6-88e6-df2018afbb31
-	joinOnDateBehavior: datePartOnly
-	fromColumn: Sheet1.'History of the incident'
-	toColumn: LocalDateTable_7c91bbd2-6caf-46fb-a71f-1d3c49d30401.Date
-
 relationship AutoDetected_9451eafa-e3a6-4cd2-9787-403b41a5cf03
 	crossFilteringBehavior: bothDirections
 	fromCardinality: one
 	fromColumn: seasons.index
 	toColumn: Sheet1.Index
+
+relationship 95a407ce-df80-4fb3-a753-ae47fc4550dd
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Sheet1.'History of the incident'
+	toColumn: LocalDateTable_4806fedf-a5fe-4aa2-b693-b57492671e80.Date
 
