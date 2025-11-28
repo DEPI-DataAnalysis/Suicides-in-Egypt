@@ -12,15 +12,9 @@
     "sections": {
       "e18b3e4bc1630baa9906": {
         "visualContainers": {
-          "d18a56064a40be0bb57b": {
+          "034c6f346550ebeabf9a": {
             "singleVisual": {
-              "visualType": "textbox",
-              "objects": {}
-            }
-          },
-          "4b62ebd45980b77d0c50": {
-            "singleVisual": {
-              "visualType": "textbox",
+              "visualType": "image",
               "objects": {}
             }
           },
@@ -30,832 +24,11 @@
               "objects": {}
             }
           },
-          "87e64a75c1a679e994a2": {
-            "singleVisual": {
-              "visualType": "shape",
-              "objects": {}
-            }
-          },
-          "15004375268a116c9318": {
-            "singleVisual": {
-              "visualType": "shape",
-              "objects": {}
-            }
-          },
-          "408162042b803bb05058": {
-            "singleVisual": {
-              "visualType": "shape",
-              "objects": {}
-            }
-          },
-          "5543321b75b45a03159e": {
-            "singleVisual": {
-              "visualType": "shape",
-              "objects": {}
-            }
-          },
-          "ac67caea13cc0b62a8c5": {
+          "100b94617025187e3398": {
             "filters": {
               "byExpr": [
                 {
-                  "name": "48a27fc995319d223d37",
-                  "type": "Advanced",
-                  "expression": {
-                    "Aggregation": {
-                      "Expression": {
-                        "Column": {
-                          "Expression": {
-                            "SourceRef": {
-                              "Entity": "Sheet1"
-                            }
-                          },
-                          "Property": "Index"
-                        }
-                      },
-                      "Function": 5
-                    }
-                  },
-                  "howCreated": 0
-                }
-              ]
-            },
-            "singleVisual": {
-              "visualType": "cardVisual",
-              "objects": {},
-              "orderBy": [
-                {
-                  "Direction": 2,
-                  "Expression": {
-                    "Aggregation": {
-                      "Expression": {
-                        "Column": {
-                          "Expression": {
-                            "SourceRef": {
-                              "Entity": "Sheet1"
-                            }
-                          },
-                          "Property": "Index"
-                        }
-                      },
-                      "Function": 5
-                    }
-                  }
-                }
-              ]
-            }
-          },
-          "88c50d1525b33ada656a": {
-            "filters": {
-              "byExpr": [
-                {
-                  "name": "4ed8392c5ec0ad46ef82",
-                  "type": "Advanced",
-                  "expression": {
-                    "Measure": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "Sheet1"
-                        }
-                      },
-                      "Property": "Rate per 100k Column"
-                    }
-                  },
-                  "howCreated": 0
-                }
-              ]
-            },
-            "singleVisual": {
-              "visualType": "cardVisual",
-              "objects": {},
-              "orderBy": [
-                {
-                  "Direction": 2,
-                  "Expression": {
-                    "Measure": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "Sheet1"
-                        }
-                      },
-                      "Property": "Rate per 100k Column"
-                    }
-                  }
-                }
-              ],
-              "display": {
-                "mode": "hidden"
-              }
-            }
-          },
-          "42e1cda815405029b15a": {
-            "filters": {
-              "byExpr": [
-                {
-                  "name": "e7d40ae53d7e65a8d2e8",
-                  "type": "Categorical",
-                  "filter": {
-                    "Version": 2,
-                    "From": [
-                      {
-                        "Name": "s",
-                        "Entity": "Sheet1",
-                        "Type": 0
-                      }
-                    ],
-                    "Where": [
-                      {
-                        "Condition": {
-                          "In": {
-                            "Expressions": [
-                              {
-                                "Column": {
-                                  "Expression": {
-                                    "SourceRef": {
-                                      "Source": "s"
-                                    }
-                                  },
-                                  "Property": "Gender"
-                                }
-                              }
-                            ],
-                            "Values": [
-                              [
-                                {
-                                  "Literal": {
-                                    "Value": "'Female'"
-                                  }
-                                }
-                              ]
-                            ]
-                          }
-                        }
-                      }
-                    ]
-                  },
-                  "expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "Sheet1"
-                        }
-                      },
-                      "Property": "Gender"
-                    }
-                  },
-                  "howCreated": 1
-                },
-                {
-                  "name": "1582b35e8f0330dea88a",
-                  "type": "Advanced",
-                  "expression": {
-                    "Aggregation": {
-                      "Expression": {
-                        "Column": {
-                          "Expression": {
-                            "SourceRef": {
-                              "Entity": "Sheet1"
-                            }
-                          },
-                          "Property": "Gender"
-                        }
-                      },
-                      "Function": 5
-                    }
-                  },
-                  "howCreated": 0
-                }
-              ]
-            },
-            "singleVisual": {
-              "visualType": "cardVisual",
-              "objects": {},
-              "orderBy": [
-                {
-                  "Direction": 2,
-                  "Expression": {
-                    "Aggregation": {
-                      "Expression": {
-                        "Column": {
-                          "Expression": {
-                            "SourceRef": {
-                              "Entity": "Sheet1"
-                            }
-                          },
-                          "Property": "Gender"
-                        }
-                      },
-                      "Function": 5
-                    }
-                  }
-                }
-              ]
-            }
-          },
-          "684b20ca963e2969a039": {
-            "filters": {
-              "byExpr": [
-                {
-                  "name": "4637a2c945617751a6fb",
-                  "type": "Categorical",
-                  "filter": {
-                    "Version": 2,
-                    "From": [
-                      {
-                        "Name": "s",
-                        "Entity": "Sheet1",
-                        "Type": 0
-                      }
-                    ],
-                    "Where": [
-                      {
-                        "Condition": {
-                          "In": {
-                            "Expressions": [
-                              {
-                                "Column": {
-                                  "Expression": {
-                                    "SourceRef": {
-                                      "Source": "s"
-                                    }
-                                  },
-                                  "Property": "Gender"
-                                }
-                              }
-                            ],
-                            "Values": [
-                              [
-                                {
-                                  "Literal": {
-                                    "Value": "'Male'"
-                                  }
-                                }
-                              ]
-                            ]
-                          }
-                        }
-                      }
-                    ]
-                  },
-                  "expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "Sheet1"
-                        }
-                      },
-                      "Property": "Gender"
-                    }
-                  },
-                  "howCreated": 1
-                },
-                {
-                  "name": "c13c9cafd8035727bb8f",
-                  "type": "Advanced",
-                  "expression": {
-                    "Aggregation": {
-                      "Expression": {
-                        "Column": {
-                          "Expression": {
-                            "SourceRef": {
-                              "Entity": "Sheet1"
-                            }
-                          },
-                          "Property": "Gender"
-                        }
-                      },
-                      "Function": 5
-                    }
-                  },
-                  "howCreated": 0
-                }
-              ]
-            },
-            "singleVisual": {
-              "visualType": "cardVisual",
-              "objects": {},
-              "orderBy": [
-                {
-                  "Direction": 2,
-                  "Expression": {
-                    "Aggregation": {
-                      "Expression": {
-                        "Column": {
-                          "Expression": {
-                            "SourceRef": {
-                              "Entity": "Sheet1"
-                            }
-                          },
-                          "Property": "Gender"
-                        }
-                      },
-                      "Function": 5
-                    }
-                  }
-                }
-              ]
-            }
-          },
-          "90e21ffd2bde010140ad": {
-            "singleVisual": {
-              "visualType": "shape",
-              "objects": {}
-            }
-          },
-          "f964b5d0a344b2550b62": {
-            "singleVisual": {
-              "visualType": "shape",
-              "objects": {}
-            }
-          },
-          "f01794c20e0d213b1a25": {
-            "singleVisual": {
-              "visualType": "textbox",
-              "objects": {},
-              "display": {
-                "mode": "hidden"
-              }
-            }
-          },
-          "8aa5ca0a8098e410c5cb": {
-            "filters": {
-              "byExpr": [
-                {
-                  "name": "3f5e9f5c087212484a18",
-                  "type": "Advanced",
-                  "expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "Sheet1"
-                        }
-                      },
-                      "Property": "the date"
-                    }
-                  },
-                  "howCreated": 0
-                },
-                {
-                  "name": "85d25d68917c81d05001",
-                  "type": "Advanced",
-                  "expression": {
-                    "Aggregation": {
-                      "Expression": {
-                        "Column": {
-                          "Expression": {
-                            "SourceRef": {
-                              "Entity": "Sheet1"
-                            }
-                          },
-                          "Property": "the date"
-                        }
-                      },
-                      "Function": 5
-                    }
-                  },
-                  "howCreated": 0
-                }
-              ]
-            },
-            "singleVisual": {
-              "visualType": "areaChart",
-              "objects": {},
-              "orderBy": [
-                {
-                  "Direction": 2,
-                  "Expression": {
-                    "Aggregation": {
-                      "Expression": {
-                        "Column": {
-                          "Expression": {
-                            "SourceRef": {
-                              "Entity": "Sheet1"
-                            }
-                          },
-                          "Property": "the date"
-                        }
-                      },
-                      "Function": 5
-                    }
-                  }
-                }
-              ],
-              "activeProjections": {
-                "Category": [
-                  {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "Sheet1"
-                        }
-                      },
-                      "Property": "the date"
-                    }
-                  }
-                ]
-              }
-            }
-          },
-          "13f9132bc32e1ebb3657": {
-            "singleVisual": {
-              "visualType": "textbox",
-              "objects": {}
-            }
-          },
-          "932eaa85642a4070cad9": {
-            "filters": {
-              "byExpr": [
-                {
-                  "name": "3f1705ac7234c02126da",
-                  "type": "Categorical",
-                  "expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "Table"
-                        }
-                      },
-                      "Property": "النوع الاجتماعي"
-                    }
-                  },
-                  "howCreated": 1
-                },
-                {
-                  "name": "cfbc564f783664ee9afe",
-                  "type": "Categorical",
-                  "expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "Sheet1"
-                        }
-                      },
-                      "Property": "Gender"
-                    }
-                  },
-                  "howCreated": 0
-                },
-                {
-                  "name": "66ec9f62436af38dda76",
-                  "type": "Advanced",
-                  "expression": {
-                    "Aggregation": {
-                      "Expression": {
-                        "Column": {
-                          "Expression": {
-                            "SourceRef": {
-                              "Entity": "Sheet1"
-                            }
-                          },
-                          "Property": "Gender"
-                        }
-                      },
-                      "Function": 5
-                    }
-                  },
-                  "howCreated": 0
-                }
-              ]
-            },
-            "singleVisual": {
-              "visualType": "hundredPercentStackedBarChart",
-              "objects": {},
-              "orderBy": [
-                {
-                  "Direction": 2,
-                  "Expression": {
-                    "Aggregation": {
-                      "Expression": {
-                        "Column": {
-                          "Expression": {
-                            "SourceRef": {
-                              "Entity": "Sheet1"
-                            }
-                          },
-                          "Property": "Gender"
-                        }
-                      },
-                      "Function": 5
-                    }
-                  }
-                }
-              ]
-            }
-          },
-          "f7c9b4d28c7adaedb060": {
-            "singleVisual": {
-              "visualType": "textbox",
-              "objects": {}
-            }
-          },
-          "e14f1b506b903df1510f": {
-            "singleVisual": {
-              "visualType": "image",
-              "objects": {}
-            }
-          },
-          "2cda2557c22ccea4e596": {
-            "filters": {
-              "byExpr": [
-                {
-                  "name": "d30c71499e6579ca9309",
-                  "type": "Categorical",
-                  "filter": {
-                    "Version": 2,
-                    "From": [
-                      {
-                        "Name": "s",
-                        "Entity": "Sheet1",
-                        "Type": 0
-                      }
-                    ],
-                    "Where": [
-                      {
-                        "Condition": {
-                          "Not": {
-                            "Expression": {
-                              "In": {
-                                "Expressions": [
-                                  {
-                                    "Column": {
-                                      "Expression": {
-                                        "SourceRef": {
-                                          "Source": "s"
-                                        }
-                                      },
-                                      "Property": "The age group"
-                                    }
-                                  }
-                                ],
-                                "Values": [
-                                  [
-                                    {
-                                      "Literal": {
-                                        "Value": "'Unavoidable'"
-                                      }
-                                    }
-                                  ]
-                                ]
-                              }
-                            }
-                          }
-                        }
-                      }
-                    ]
-                  },
-                  "expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "Sheet1"
-                        }
-                      },
-                      "Property": "The age group"
-                    }
-                  },
-                  "howCreated": 0
-                },
-                {
-                  "name": "dd352e8959ebde6a3e45",
-                  "type": "Advanced",
-                  "expression": {
-                    "Aggregation": {
-                      "Expression": {
-                        "Column": {
-                          "Expression": {
-                            "SourceRef": {
-                              "Entity": "Sheet1"
-                            }
-                          },
-                          "Property": "The age group"
-                        }
-                      },
-                      "Function": 5
-                    }
-                  },
-                  "howCreated": 0
-                }
-              ]
-            },
-            "singleVisual": {
-              "visualType": "donutChart",
-              "objects": {},
-              "orderBy": [
-                {
-                  "Direction": 2,
-                  "Expression": {
-                    "Aggregation": {
-                      "Expression": {
-                        "Column": {
-                          "Expression": {
-                            "SourceRef": {
-                              "Entity": "Sheet1"
-                            }
-                          },
-                          "Property": "The age group"
-                        }
-                      },
-                      "Function": 5
-                    }
-                  }
-                }
-              ],
-              "activeProjections": {
-                "Category": [
-                  {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "Sheet1"
-                        }
-                      },
-                      "Property": "The age group"
-                    }
-                  }
-                ]
-              }
-            }
-          },
-          "4ad44cc734ea83e57063": {
-            "singleVisual": {
-              "visualType": "textbox",
-              "objects": {}
-            }
-          },
-          "a1546916aa62f5acf9b5": {
-            "singleVisual": {
-              "visualType": "textbox",
-              "objects": {}
-            }
-          },
-          "bbbc786f730f003a29a7": {
-            "singleVisual": {
-              "visualType": "textbox",
-              "objects": {}
-            }
-          },
-          "34fda08b2dd4761a3609": {
-            "singleVisual": {
-              "visualType": "image",
-              "objects": {}
-            }
-          },
-          "034c6f346550ebeabf9a": {
-            "singleVisual": {
-              "visualType": "image",
-              "objects": {}
-            }
-          },
-          "68e01949a4ff85b824cf": {
-            "filters": {
-              "byExpr": [
-                {
-                  "name": "dc86333a47da4c788dc6",
-                  "type": "Categorical",
-                  "filter": {
-                    "Version": 2,
-                    "From": [
-                      {
-                        "Name": "s",
-                        "Entity": "Sheet1",
-                        "Type": 0
-                      }
-                    ],
-                    "Where": [
-                      {
-                        "Condition": {
-                          "In": {
-                            "Expressions": [
-                              {
-                                "Column": {
-                                  "Expression": {
-                                    "SourceRef": {
-                                      "Source": "s"
-                                    }
-                                  },
-                                  "Property": "The reason for suicide"
-                                }
-                              }
-                            ],
-                            "Values": [
-                              [
-                                {
-                                  "Literal": {
-                                    "Value": "'Family disputes'"
-                                  }
-                                }
-                              ],
-                              [
-                                {
-                                  "Literal": {
-                                    "Value": "'Financial crisis'"
-                                  }
-                                }
-                              ],
-                              [
-                                {
-                                  "Literal": {
-                                    "Value": "'Mental illness'"
-                                  }
-                                }
-                              ],
-                              [
-                                {
-                                  "Literal": {
-                                    "Value": "'Psychological crisis'"
-                                  }
-                                }
-                              ],
-                              [
-                                {
-                                  "Literal": {
-                                    "Value": "'unknown'"
-                                  }
-                                }
-                              ]
-                            ]
-                          }
-                        }
-                      }
-                    ]
-                  },
-                  "expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "Sheet1"
-                        }
-                      },
-                      "Property": "The reason for suicide"
-                    }
-                  },
-                  "howCreated": 0
-                },
-                {
-                  "name": "1c58de810e73696b4ee2",
-                  "type": "Advanced",
-                  "expression": {
-                    "Aggregation": {
-                      "Expression": {
-                        "Column": {
-                          "Expression": {
-                            "SourceRef": {
-                              "Entity": "Sheet1"
-                            }
-                          },
-                          "Property": "The reason for suicide"
-                        }
-                      },
-                      "Function": 5
-                    }
-                  },
-                  "howCreated": 0
-                }
-              ]
-            },
-            "singleVisual": {
-              "visualType": "columnChart",
-              "objects": {},
-              "orderBy": [
-                {
-                  "Direction": 2,
-                  "Expression": {
-                    "Aggregation": {
-                      "Expression": {
-                        "Column": {
-                          "Expression": {
-                            "SourceRef": {
-                              "Entity": "Sheet1"
-                            }
-                          },
-                          "Property": "The reason for suicide"
-                        }
-                      },
-                      "Function": 5
-                    }
-                  }
-                }
-              ],
-              "activeProjections": {
-                "Category": [
-                  {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "Sheet1"
-                        }
-                      },
-                      "Property": "The reason for suicide"
-                    }
-                  }
-                ]
-              }
-            }
-          },
-          "c28d01a8f33ac83a37b3": {
-            "filters": {
-              "byExpr": [
-                {
-                  "name": "088c5940f831fd35c135",
+                  "name": "7b023ba81890283d0002",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -865,279 +38,6 @@
                         }
                       },
                       "Property": "Territories"
-                    }
-                  },
-                  "howCreated": 0
-                },
-                {
-                  "name": "cd67b10118722e6f0f9d",
-                  "type": "Advanced",
-                  "expression": {
-                    "Aggregation": {
-                      "Expression": {
-                        "Column": {
-                          "Expression": {
-                            "SourceRef": {
-                              "Entity": "Sheet1"
-                            }
-                          },
-                          "Property": "Territories"
-                        }
-                      },
-                      "Function": 5
-                    }
-                  },
-                  "howCreated": 0
-                }
-              ]
-            },
-            "singleVisual": {
-              "visualType": "barChart",
-              "objects": {},
-              "orderBy": [
-                {
-                  "Direction": 2,
-                  "Expression": {
-                    "Aggregation": {
-                      "Expression": {
-                        "Column": {
-                          "Expression": {
-                            "SourceRef": {
-                              "Entity": "Sheet1"
-                            }
-                          },
-                          "Property": "Territories"
-                        }
-                      },
-                      "Function": 5
-                    }
-                  }
-                }
-              ],
-              "activeProjections": {
-                "Category": [
-                  {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "Sheet1"
-                        }
-                      },
-                      "Property": "Territories"
-                    }
-                  }
-                ]
-              }
-            }
-          },
-          "c03f23f90b3d4a01cd0a": {
-            "singleVisual": {
-              "visualType": "shape",
-              "objects": {}
-            }
-          },
-          "26f4e4cbe9ed7d99044c": {
-            "singleVisual": {
-              "visualType": "shape",
-              "objects": {}
-            }
-          },
-          "32fd83680d31a071d84b": {
-            "singleVisual": {
-              "visualType": "shape",
-              "objects": {}
-            }
-          },
-          "ee1c56647498ea31e748": {
-            "singleVisual": {
-              "visualType": "shape",
-              "objects": {}
-            }
-          },
-          "31760a5988a3878a10b9": {
-            "singleVisual": {
-              "visualType": "shape",
-              "objects": {}
-            }
-          },
-          "2fbff3dc226401ea0037": {
-            "singleVisual": {
-              "visualType": "shape",
-              "objects": {}
-            }
-          },
-          "4e980a2e83cd5a2730e0": {
-            "filters": {
-              "byExpr": [
-                {
-                  "name": "a2a46409468daab2751e",
-                  "type": "Advanced",
-                  "expression": {
-                    "Measure": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "Sheet1"
-                        }
-                      },
-                      "Property": "Suicides per Year"
-                    }
-                  },
-                  "howCreated": 0
-                }
-              ]
-            },
-            "singleVisual": {
-              "visualType": "cardVisual",
-              "objects": {},
-              "orderBy": [
-                {
-                  "Direction": 2,
-                  "Expression": {
-                    "Measure": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "Sheet1"
-                        }
-                      },
-                      "Property": "Suicides per Year"
-                    }
-                  }
-                }
-              ],
-              "display": {
-                "mode": "hidden"
-              }
-            }
-          },
-          "d2b0569498b25295d271": {
-            "filters": {
-              "byExpr": [
-                {
-                  "name": "809c4862000ce7687e6f",
-                  "type": "Advanced",
-                  "expression": {
-                    "Measure": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "Sheet1"
-                        }
-                      },
-                      "Property": "Suicides per Month"
-                    }
-                  },
-                  "howCreated": 0
-                }
-              ]
-            },
-            "singleVisual": {
-              "visualType": "cardVisual",
-              "objects": {},
-              "orderBy": [
-                {
-                  "Direction": 2,
-                  "Expression": {
-                    "Measure": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "Sheet1"
-                        }
-                      },
-                      "Property": "Suicides per Month"
-                    }
-                  }
-                }
-              ],
-              "display": {
-                "mode": "hidden"
-              }
-            }
-          },
-          "dfc31ec936e0eeeae0e0": {
-            "singleVisual": {
-              "visualType": "shape",
-              "objects": {}
-            }
-          },
-          "de34341db59c336aabc8": {
-            "singleVisual": {
-              "visualType": "shape",
-              "objects": {}
-            }
-          },
-          "6d3e7572a470a91dc743": {
-            "singleVisual": {
-              "visualType": "shape",
-              "objects": {},
-              "display": {
-                "mode": "hidden"
-              }
-            }
-          },
-          "a8bb55b9890037e7e120": {
-            "singleVisual": {
-              "visualType": "shape",
-              "objects": {},
-              "display": {
-                "mode": "hidden"
-              }
-            }
-          },
-          "ec4cc97ebc50bb55e088": {
-            "singleVisual": {
-              "visualType": "textbox",
-              "objects": {},
-              "display": {
-                "mode": "hidden"
-              }
-            }
-          },
-          "951176c5a7d65534cddb": {
-            "singleVisual": {
-              "visualType": "textbox",
-              "objects": {},
-              "display": {
-                "mode": "hidden"
-              }
-            }
-          },
-          "523e6758ad754d469168": {
-            "singleVisual": {
-              "visualType": "actionButton",
-              "objects": {}
-            }
-          },
-          "61f7299d10960b15a607": {
-            "singleVisual": {
-              "visualType": "actionButton",
-              "objects": {},
-              "display": {
-                "mode": "hidden"
-              }
-            }
-          },
-          "3f052783cc463ec1e8e1": {
-            "singleVisual": {
-              "visualType": "shape",
-              "objects": {},
-              "display": {
-                "mode": "hidden"
-              }
-            }
-          },
-          "1241c2194bee6c9c8b56": {
-            "filters": {
-              "byExpr": [
-                {
-                  "name": "50cac768f826f9498f97",
-                  "type": "Advanced",
-                  "expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "Sheet1"
-                        }
-                      },
-                      "Property": "the date"
                     }
                   },
                   "howCreated": 0
@@ -1185,20 +85,11 @@
                           "Entity": "Sheet1"
                         }
                       },
-                      "Property": "the date"
+                      "Property": "Territories"
                     }
                   }
                 ]
               },
-              "display": {
-                "mode": "hidden"
-              }
-            }
-          },
-          "5a083a227d8c08b28a34": {
-            "singleVisual": {
-              "visualType": "textbox",
-              "objects": {},
               "display": {
                 "mode": "hidden"
               }
@@ -1213,42 +104,12 @@
               }
             }
           },
-          "67caaaec69345e62dc10": {
-            "singleVisual": {
-              "visualType": "image",
-              "objects": {}
-            }
-          },
-          "f446b19411c6290304c5": {
-            "singleVisual": {
-              "visualType": "shape",
-              "objects": {}
-            }
-          },
-          "704b694e7dc43c768de0": {
-            "singleVisual": {
-              "visualType": "textbox",
-              "objects": {},
-              "display": {
-                "mode": "hidden"
-              }
-            }
-          },
-          "ae9dfb6020b22443c7cd": {
-            "singleVisual": {
-              "visualType": "textbox",
-              "objects": {},
-              "display": {
-                "mode": "hidden"
-              }
-            }
-          },
-          "81b7902559a3094a1100": {
+          "1241c2194bee6c9c8b56": {
             "filters": {
               "byExpr": [
                 {
-                  "name": "ed270b530b401c50f67f",
-                  "type": "Categorical",
+                  "name": "b26d682e80d3ab022429",
+                  "type": "Advanced",
                   "expression": {
                     "Column": {
                       "Expression": {
@@ -1256,51 +117,7 @@
                           "Entity": "Sheet1"
                         }
                       },
-                      "Property": "Gender"
-                    }
-                  },
-                  "howCreated": 0
-                }
-              ]
-            },
-            "singleVisual": {
-              "visualType": "advancedSlicerVisual",
-              "objects": {
-                "merge": {
-                  "selection": [
-                    {
-                      "properties": {
-                        "strictSingleSelect": {
-                          "expr": {
-                            "Literal": {
-                              "Value": "false"
-                            }
-                          }
-                        }
-                      }
-                    }
-                  ]
-                }
-              },
-              "display": {
-                "mode": "hidden"
-              }
-            }
-          },
-          "100b94617025187e3398": {
-            "filters": {
-              "byExpr": [
-                {
-                  "name": "ccc54c6f537e706e9039",
-                  "type": "Categorical",
-                  "expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "Sheet1"
-                        }
-                      },
-                      "Property": "Territories"
+                      "Property": "Year"
                     }
                   },
                   "howCreated": 0
@@ -1317,7 +134,7 @@
                         "mode": {
                           "expr": {
                             "Literal": {
-                              "Value": "'Dropdown'"
+                              "Value": "'Between'"
                             }
                           }
                         }
@@ -1348,7 +165,7 @@
                           "Entity": "Sheet1"
                         }
                       },
-                      "Property": "Territories"
+                      "Property": "Year"
                     }
                   }
                 ]
@@ -1358,49 +175,16 @@
               }
             }
           },
-          "cad1f4296d62027902aa": {
+          "13f9132bc32e1ebb3657": {
             "singleVisual": {
               "visualType": "textbox",
-              "objects": {},
-              "display": {
-                "mode": "hidden"
-              }
+              "objects": {}
             }
           },
-          "75a4d8163130720c6b28": {
+          "15004375268a116c9318": {
             "singleVisual": {
               "visualType": "shape",
-              "objects": {},
-              "display": {
-                "mode": "hidden"
-              }
-            }
-          },
-          "cbf1dea87e50913e02c9": {
-            "singleVisual": {
-              "visualType": "shape",
-              "objects": {},
-              "display": {
-                "mode": "hidden"
-              }
-            }
-          },
-          "434648500dd5ea0be53d": {
-            "singleVisual": {
-              "visualType": "shape",
-              "objects": {},
-              "display": {
-                "mode": "hidden"
-              }
-            }
-          },
-          "7a49bad681ba2902d823": {
-            "singleVisual": {
-              "visualType": "shape",
-              "objects": {},
-              "display": {
-                "mode": "hidden"
-              }
+              "objects": {}
             }
           },
           "166dda30615055e30c41": {
@@ -1410,12 +194,6 @@
               "display": {
                 "mode": "hidden"
               }
-            }
-          },
-          "fcaefb6fb405779c1530": {
-            "singleVisual": {
-              "visualType": "shape",
-              "objects": {}
             }
           },
           "222b50f955cb0a0d2b59": {
@@ -1514,6 +292,1421 @@
                 "mode": "hidden"
               }
             }
+          },
+          "26f4e4cbe9ed7d99044c": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "2cda2557c22ccea4e596": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "d30c71499e6579ca9309",
+                  "type": "Categorical",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "s",
+                        "Entity": "Sheet1",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "Not": {
+                            "Expression": {
+                              "In": {
+                                "Expressions": [
+                                  {
+                                    "Column": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Source": "s"
+                                        }
+                                      },
+                                      "Property": "The age group"
+                                    }
+                                  }
+                                ],
+                                "Values": [
+                                  [
+                                    {
+                                      "Literal": {
+                                        "Value": "'Unavoidable'"
+                                      }
+                                    }
+                                  ],
+                                  [
+                                    {
+                                      "Literal": {
+                                        "Value": "'Others'"
+                                      }
+                                    }
+                                  ]
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Sheet1"
+                        }
+                      },
+                      "Property": "The age group"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "13a2f9501cb96c6cac55",
+                  "type": "Advanced",
+                  "expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "Sheet1"
+                            }
+                          },
+                          "Property": "The age group"
+                        }
+                      },
+                      "Function": 5
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "donutChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "Sheet1"
+                            }
+                          },
+                          "Property": "The age group"
+                        }
+                      },
+                      "Function": 5
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Sheet1"
+                        }
+                      },
+                      "Property": "The age group"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "2fbff3dc226401ea0037": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "31760a5988a3878a10b9": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "32fd83680d31a071d84b": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "34fda08b2dd4761a3609": {
+            "singleVisual": {
+              "visualType": "image",
+              "objects": {}
+            }
+          },
+          "3f052783cc463ec1e8e1": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {},
+              "display": {
+                "mode": "hidden"
+              }
+            }
+          },
+          "408162042b803bb05058": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "42e1cda815405029b15a": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "e7d40ae53d7e65a8d2e8",
+                  "type": "Categorical",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "s",
+                        "Entity": "Sheet1",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "In": {
+                            "Expressions": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "s"
+                                    }
+                                  },
+                                  "Property": "Gender"
+                                }
+                              }
+                            ],
+                            "Values": [
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "'Female'"
+                                  }
+                                }
+                              ]
+                            ]
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Sheet1"
+                        }
+                      },
+                      "Property": "Gender"
+                    }
+                  },
+                  "howCreated": 1
+                },
+                {
+                  "name": "efda329306ed130237e4",
+                  "type": "Advanced",
+                  "expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "Sheet1"
+                            }
+                          },
+                          "Property": "Gender"
+                        }
+                      },
+                      "Function": 5
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "cardVisual",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "Sheet1"
+                            }
+                          },
+                          "Property": "Gender"
+                        }
+                      },
+                      "Function": 5
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "434648500dd5ea0be53d": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {},
+              "display": {
+                "mode": "hidden"
+              }
+            }
+          },
+          "4ad44cc734ea83e57063": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "4b62ebd45980b77d0c50": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "4e980a2e83cd5a2730e0": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "d73af672834b88177696",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Sheet1"
+                        }
+                      },
+                      "Property": "Suicides per Year"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "cardVisual",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Sheet1"
+                        }
+                      },
+                      "Property": "Suicides per Year"
+                    }
+                  }
+                }
+              ],
+              "display": {
+                "mode": "hidden"
+              }
+            }
+          },
+          "67caaaec69345e62dc10": {
+            "singleVisual": {
+              "visualType": "image",
+              "objects": {}
+            }
+          },
+          "f446b19411c6290304c5": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "523e6758ad754d469168": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "5543321b75b45a03159e": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "5a083a227d8c08b28a34": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {},
+              "display": {
+                "mode": "hidden"
+              }
+            }
+          },
+          "61f7299d10960b15a607": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {},
+              "display": {
+                "mode": "hidden"
+              }
+            }
+          },
+          "684b20ca963e2969a039": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "4637a2c945617751a6fb",
+                  "type": "Categorical",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "s",
+                        "Entity": "Sheet1",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "In": {
+                            "Expressions": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "s"
+                                    }
+                                  },
+                                  "Property": "Gender"
+                                }
+                              }
+                            ],
+                            "Values": [
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "'Male'"
+                                  }
+                                }
+                              ]
+                            ]
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Sheet1"
+                        }
+                      },
+                      "Property": "Gender"
+                    }
+                  },
+                  "howCreated": 1
+                },
+                {
+                  "name": "c7f4cc408492ecdd51bd",
+                  "type": "Advanced",
+                  "expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "Sheet1"
+                            }
+                          },
+                          "Property": "Gender"
+                        }
+                      },
+                      "Function": 5
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "cardVisual",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "Sheet1"
+                            }
+                          },
+                          "Property": "Gender"
+                        }
+                      },
+                      "Function": 5
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "68e01949a4ff85b824cf": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "dc86333a47da4c788dc6",
+                  "type": "TopN",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "subquery",
+                        "Expression": {
+                          "Subquery": {
+                            "Query": {
+                              "Version": 2,
+                              "From": [
+                                {
+                                  "Name": "s",
+                                  "Entity": "Sheet1",
+                                  "Type": 0
+                                }
+                              ],
+                              "Select": [
+                                {
+                                  "Column": {
+                                    "Expression": {
+                                      "SourceRef": {
+                                        "Source": "s"
+                                      }
+                                    },
+                                    "Property": "The reason for suicide"
+                                  },
+                                  "Name": "field"
+                                }
+                              ],
+                              "OrderBy": [
+                                {
+                                  "Direction": 2,
+                                  "Expression": {
+                                    "Aggregation": {
+                                      "Expression": {
+                                        "Column": {
+                                          "Expression": {
+                                            "SourceRef": {
+                                              "Source": "s"
+                                            }
+                                          },
+                                          "Property": "Index"
+                                        }
+                                      },
+                                      "Function": 5
+                                    }
+                                  }
+                                }
+                              ],
+                              "Top": 5
+                            }
+                          }
+                        },
+                        "Type": 2
+                      },
+                      {
+                        "Name": "s",
+                        "Entity": "Sheet1",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "In": {
+                            "Expressions": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "s"
+                                    }
+                                  },
+                                  "Property": "The reason for suicide"
+                                }
+                              }
+                            ],
+                            "Table": {
+                              "SourceRef": {
+                                "Source": "subquery"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Sheet1"
+                        }
+                      },
+                      "Property": "The reason for suicide"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "d190adac08b65a9a0dae",
+                  "type": "Advanced",
+                  "expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "Sheet1"
+                            }
+                          },
+                          "Property": "The reason for suicide"
+                        }
+                      },
+                      "Function": 5
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "columnChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "Sheet1"
+                            }
+                          },
+                          "Property": "The reason for suicide"
+                        }
+                      },
+                      "Function": 5
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Sheet1"
+                        }
+                      },
+                      "Property": "The reason for suicide"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "6d3e7572a470a91dc743": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {},
+              "display": {
+                "mode": "hidden"
+              }
+            }
+          },
+          "704b694e7dc43c768de0": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {},
+              "display": {
+                "mode": "hidden"
+              }
+            }
+          },
+          "75a4d8163130720c6b28": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {},
+              "display": {
+                "mode": "hidden"
+              }
+            }
+          },
+          "7a49bad681ba2902d823": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {},
+              "display": {
+                "mode": "hidden"
+              }
+            }
+          },
+          "81b7902559a3094a1100": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "ffc108553503570e1b82",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Sheet1"
+                        }
+                      },
+                      "Property": "Gender"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "advancedSlicerVisual",
+              "objects": {
+                "merge": {
+                  "selection": [
+                    {
+                      "properties": {
+                        "strictSingleSelect": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "false"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "display": {
+                "mode": "hidden"
+              }
+            }
+          },
+          "87e64a75c1a679e994a2": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "88c50d1525b33ada656a": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "b59b272267107705b04d",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Sheet1"
+                        }
+                      },
+                      "Property": "Rate per 100k Column"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "cardVisual",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Sheet1"
+                        }
+                      },
+                      "Property": "Rate per 100k Column"
+                    }
+                  }
+                }
+              ],
+              "display": {
+                "mode": "hidden"
+              }
+            }
+          },
+          "8aa5ca0a8098e410c5cb": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "57aacd70d476e00c5745",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Sheet1"
+                        }
+                      },
+                      "Property": "the date"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "e0984f4630b55a16530d",
+                  "type": "Advanced",
+                  "expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "Sheet1"
+                            }
+                          },
+                          "Property": "the date"
+                        }
+                      },
+                      "Function": 5
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "areaChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 1,
+                  "Expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "Sheet1"
+                            }
+                          },
+                          "Property": "the date"
+                        }
+                      },
+                      "Function": 5
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Sheet1"
+                        }
+                      },
+                      "Property": "the date"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "5c25c6caf56c16766b6d": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "c6df2d3f85b6021eb652": {
+            "singleVisual": {
+              "visualType": "image",
+              "objects": {}
+            }
+          },
+          "90e21ffd2bde010140ad": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "932eaa85642a4070cad9": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "3f1705ac7234c02126da",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Table"
+                        }
+                      },
+                      "Property": "النوع الاجتماعي"
+                    }
+                  },
+                  "howCreated": 1
+                },
+                {
+                  "name": "87a6ca0d6100c97c1895",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Sheet1"
+                        }
+                      },
+                      "Property": "Gender"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "61352e90d8e79a081d99",
+                  "type": "Advanced",
+                  "expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "Sheet1"
+                            }
+                          },
+                          "Property": "Gender"
+                        }
+                      },
+                      "Function": 5
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "hundredPercentStackedBarChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "Sheet1"
+                            }
+                          },
+                          "Property": "Gender"
+                        }
+                      },
+                      "Function": 5
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "951176c5a7d65534cddb": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {},
+              "display": {
+                "mode": "hidden"
+              }
+            }
+          },
+          "a1546916aa62f5acf9b5": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "a8bb55b9890037e7e120": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {},
+              "display": {
+                "mode": "hidden"
+              }
+            }
+          },
+          "ac67caea13cc0b62a8c5": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "e61e96501407b41dcdce",
+                  "type": "Advanced",
+                  "expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "Sheet1"
+                            }
+                          },
+                          "Property": "Index"
+                        }
+                      },
+                      "Function": 5
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "cardVisual",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "Sheet1"
+                            }
+                          },
+                          "Property": "Index"
+                        }
+                      },
+                      "Function": 5
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "ae9dfb6020b22443c7cd": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {},
+              "display": {
+                "mode": "hidden"
+              }
+            }
+          },
+          "bbbc786f730f003a29a7": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "c03f23f90b3d4a01cd0a": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "c28d01a8f33ac83a37b3": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "2bd645cd2794016b4659",
+                  "type": "TopN",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "subquery",
+                        "Expression": {
+                          "Subquery": {
+                            "Query": {
+                              "Version": 2,
+                              "From": [
+                                {
+                                  "Name": "s",
+                                  "Entity": "Sheet1",
+                                  "Type": 0
+                                }
+                              ],
+                              "Select": [
+                                {
+                                  "Column": {
+                                    "Expression": {
+                                      "SourceRef": {
+                                        "Source": "s"
+                                      }
+                                    },
+                                    "Property": "Suicide method"
+                                  },
+                                  "Name": "field"
+                                }
+                              ],
+                              "OrderBy": [
+                                {
+                                  "Direction": 2,
+                                  "Expression": {
+                                    "Aggregation": {
+                                      "Expression": {
+                                        "Column": {
+                                          "Expression": {
+                                            "SourceRef": {
+                                              "Source": "s"
+                                            }
+                                          },
+                                          "Property": "Index"
+                                        }
+                                      },
+                                      "Function": 5
+                                    }
+                                  }
+                                }
+                              ],
+                              "Top": 7
+                            }
+                          }
+                        },
+                        "Type": 2
+                      },
+                      {
+                        "Name": "s",
+                        "Entity": "Sheet1",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "In": {
+                            "Expressions": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "s"
+                                    }
+                                  },
+                                  "Property": "Suicide method"
+                                }
+                              }
+                            ],
+                            "Table": {
+                              "SourceRef": {
+                                "Source": "subquery"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Sheet1"
+                        }
+                      },
+                      "Property": "Suicide method"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "78df021c3a89e46381bb",
+                  "type": "Advanced",
+                  "expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "Sheet1"
+                            }
+                          },
+                          "Property": "Suicide method"
+                        }
+                      },
+                      "Function": 5
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "barChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "Sheet1"
+                            }
+                          },
+                          "Property": "Suicide method"
+                        }
+                      },
+                      "Function": 5
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Sheet1"
+                        }
+                      },
+                      "Property": "Suicide method"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "c3c43cd7447e11daa195": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "cad1f4296d62027902aa": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {},
+              "display": {
+                "mode": "hidden"
+              }
+            }
+          },
+          "cbf1dea87e50913e02c9": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {},
+              "display": {
+                "mode": "hidden"
+              }
+            }
+          },
+          "d18a56064a40be0bb57b": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "d2b0569498b25295d271": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "e91cd99c3aa578acc000",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Sheet1"
+                        }
+                      },
+                      "Property": "Suicides per Month"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "cardVisual",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Sheet1"
+                        }
+                      },
+                      "Property": "Suicides per Month"
+                    }
+                  }
+                }
+              ],
+              "display": {
+                "mode": "hidden"
+              }
+            }
+          },
+          "de34341db59c336aabc8": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "dfc31ec936e0eeeae0e0": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "e14f1b506b903df1510f": {
+            "singleVisual": {
+              "visualType": "image",
+              "objects": {}
+            }
+          },
+          "ec4cc97ebc50bb55e088": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {},
+              "display": {
+                "mode": "hidden"
+              }
+            }
+          },
+          "ee1c56647498ea31e748": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "f01794c20e0d213b1a25": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {},
+              "display": {
+                "mode": "hidden"
+              }
+            }
+          },
+          "f7c9b4d28c7adaedb060": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "f964b5d0a344b2550b62": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "fcaefb6fb405779c1530": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "1a741faf5ab8e21222d3": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {},
+              "display": {
+                "mode": "hidden"
+              }
+            }
+          },
+          "1c6b75e318541b332759": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "c4b3e120364511993974",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Sheet1"
+                        }
+                      },
+                      "Property": "Type of incident"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "advancedSlicerVisual",
+              "objects": {
+                "merge": {
+                  "selection": [
+                    {
+                      "properties": {
+                        "strictSingleSelect": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "false"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "display": {
+                "mode": "hidden"
+              }
+            }
+          }
+        },
+        "visualContainerGroups": {
+          "5017c664cb6c73ed4f9d": {
+            "isHidden": true
+          },
+          "909104c807466521ffc9": {
+            "isHidden": false
           }
         }
       }

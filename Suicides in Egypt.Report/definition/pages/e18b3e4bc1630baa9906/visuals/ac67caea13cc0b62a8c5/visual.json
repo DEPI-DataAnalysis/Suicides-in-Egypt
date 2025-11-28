@@ -7,7 +7,7 @@
     "z": 9000,
     "height": 126.66666666666667,
     "width": 240,
-    "tabOrder": 5000
+    "tabOrder": 4000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -32,8 +32,8 @@
                 }
               },
               "queryRef": "CountNonNull(Sheet1.Index)",
-              "nativeQueryRef": "No. of Suicides",
-              "displayName": "No. of Suicides"
+              "nativeQueryRef": "No. of Incidents",
+              "displayName": "No. of Incidents"
             }
           ]
         }
@@ -113,6 +113,13 @@
               "expr": {
                 "Literal": {
                   "Value": "40D"
+                }
+              }
+            },
+            "showBlankAs": {
+              "expr": {
+                "Literal": {
+                  "Value": "'0.00'"
                 }
               }
             }

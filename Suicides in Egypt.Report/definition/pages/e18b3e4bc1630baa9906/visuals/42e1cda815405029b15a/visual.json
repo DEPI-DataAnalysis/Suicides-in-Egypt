@@ -7,7 +7,7 @@
     "z": 10000,
     "height": 126.66666666666666,
     "width": 239.44444444444443,
-    "tabOrder": 7000
+    "tabOrder": 6000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -113,6 +113,13 @@
               "expr": {
                 "Literal": {
                   "Value": "40D"
+                }
+              }
+            },
+            "showBlankAs": {
+              "expr": {
+                "Literal": {
+                  "Value": "'0.00'"
                 }
               }
             }

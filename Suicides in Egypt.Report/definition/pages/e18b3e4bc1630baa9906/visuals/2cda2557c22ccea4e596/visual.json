@@ -7,7 +7,7 @@
     "z": 18000,
     "height": 306,
     "width": 484,
-    "tabOrder": 17000
+    "tabOrder": 16000
   },
   "visual": {
     "visualType": "donutChart",
@@ -540,6 +540,13 @@
                               "Value": "'Others'"
                             }
                           }
+                        ],
+                        [
+                          {
+                            "Literal": {
+                              "Value": "'Not specified'"
+                            }
+                          }
                         ]
                       ]
                     }
@@ -564,6 +571,25 @@
             }
           ]
         }
+      },
+      {
+        "name": "4820779d5e1338b475e1",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Sheet1"
+                  }
+                },
+                "Property": "The age group"
+              }
+            },
+            "Function": 5
+          }
+        },
+        "type": "Advanced"
       }
     ]
   }

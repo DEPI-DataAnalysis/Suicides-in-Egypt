@@ -166,7 +166,7 @@ table Sheet1
 			
 			VAR RowCount = CALCULATE(COUNTROWS('Sheet1'), ALLEXCEPT('Sheet1', 'Sheet1'[The functional category]))
 			RETURN
-			IF('Sheet1'[The functional category] = "Others", -1, RowCount)
+			IF('Sheet1'[The functional category] = "Not specified", -1, RowCount)
 		formatString: 0
 		lineageTag: a7236180-3e7a-4ac6-b2a9-95e0382188c2
 		summarizeBy: sum
@@ -179,6 +179,26 @@ table Sheet1
 		sortByColumn: SortColumn
 
 		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column Display_Reason = 'Sheet1'[The reason for suicide]
+		lineageTag: 8d1159e9-9ec9-4fb0-bfc7-e808dccf74cc
+		summarizeBy: none
+		sortByColumn: SortColumnReason
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column SortColumnReason =
+			
+			VAR RowCount = CALCULATE(COUNTROWS('Sheet1'), ALLEXCEPT('Sheet1', 'Sheet1'[The reason for suicide]))
+			RETURN
+			IF('Sheet1'[The reason for suicide] = "Not specified", -1, RowCount)
+		formatString: 0
+		lineageTag: 5cbbd0ff-4153-4a20-b985-edb4965349c9
+		summarizeBy: sum
 
 		annotation SummarizationSetBy = Automatic
 
@@ -210,19 +230,30 @@ table Sheet1
 				    #"Replaced Value Unavoidable" = Table.ReplaceValue(
 				    #"Replaced Value14",
 				    "Unavoidable",
-				    "Others",
+				    "Not specified",
 				    Replacer.ReplaceValue,
 				    Table.ColumnNames(#"Replaced Value14")
 				),
 				    #"Replaced Value unknown" = Table.ReplaceValue(
 				    #"Replaced Value Unavoidable",
 				    "unknown",
-				    "Others",
+				    "Not specified",
 				    Replacer.ReplaceValue,
 				    Table.ColumnNames(#"Replaced Value Unavoidable")
-				)
+				),
+				    #"Replaced Value15" = Table.ReplaceValue(#"Replaced Value unknown","The initiation of suicide","initiation of suicide",Replacer.ReplaceText,{"Type of incident"}),
+				    #"Replaced Value16" = Table.ReplaceValue(#"Replaced Value15","Emotional crisis before marriage","Emotional crisis",Replacer.ReplaceText,{"The reason for suicide"}),
+				    #"Replaced Value17" = Table.ReplaceValue(#"Replaced Value16","Psychological crisis","Mental illness",Replacer.ReplaceText,{"The reason for suicide"}),
+				    #"Replaced Value Not specified" = Table.ReplaceValue(
+				    #"Replaced Value17",
+				    "Others",
+				    "Not specified",
+				    Replacer.ReplaceValue,
+				    Table.ColumnNames(#"Replaced Value17")
+				),
+				    #"Replaced Value18" = Table.ReplaceValue(#"Replaced Value Not specified","A ruling against him is issued","Issuance of a judgment",Replacer.ReplaceText,{"The reason for suicide"})
 				in
-				    #"Replaced Value unknown"
+				    #"Replaced Value18"
 
 	annotation PBI_ResultType = Table
 

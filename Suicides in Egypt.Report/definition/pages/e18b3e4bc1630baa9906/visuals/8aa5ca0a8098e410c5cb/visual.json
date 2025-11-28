@@ -7,7 +7,7 @@
     "z": 14000,
     "height": 265,
     "width": 770,
-    "tabOrder": 12000
+    "tabOrder": 11000
   },
   "visual": {
     "visualType": "areaChart",
@@ -61,18 +61,13 @@
         "sort": [
           {
             "field": {
-              "Aggregation": {
+              "Column": {
                 "Expression": {
-                  "Column": {
-                    "Expression": {
-                      "SourceRef": {
-                        "Entity": "Sheet1"
-                      }
-                    },
-                    "Property": "the date"
+                  "SourceRef": {
+                    "Entity": "Sheet1"
                   }
                 },
-                "Function": 5
+                "Property": "the date"
               }
             },
             "direction": "Ascending"
@@ -442,5 +437,42 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "9072f6ea7d6585d99228",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Sheet1"
+              }
+            },
+            "Property": "the date"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "dff9fb88e87e75286628",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Sheet1"
+                  }
+                },
+                "Property": "the date"
+              }
+            },
+            "Function": 5
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

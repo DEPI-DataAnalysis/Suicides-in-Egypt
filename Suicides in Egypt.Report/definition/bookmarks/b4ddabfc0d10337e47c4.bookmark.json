@@ -12,11 +12,62 @@
     "sections": {
       "d3f368df04168386d932": {
         "visualContainers": {
+          "06da46ea8493184be40f": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "1ba16e2ea8e57105b26f": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "2d2f490fd47ada03938e": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {},
+              "display": {
+                "mode": "hidden"
+              }
+            }
+          },
+          "387901b80174aa616253": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {},
+              "display": {
+                "mode": "hidden"
+              }
+            }
+          },
+          "3cd4e4fc0b7044b3653e": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "68811e569c169cc4abb8": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "6a94faf08b56d42eecb1": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {},
+              "display": {
+                "mode": "hidden"
+              }
+            }
+          },
           "6e0aa9c944e2c18931db": {
             "filters": {
               "byExpr": [
                 {
-                  "name": "2d774a3aaaf79a29c305",
+                  "name": "845853cf9014b9160d07",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -31,7 +82,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "5a5efac93b461892791e",
+                  "name": "ec5a015de88cab56e0b2",
                   "type": "Advanced",
                   "expression": {
                     "Aggregation": {
@@ -77,15 +128,18 @@
               ]
             }
           },
-          "f5697a34da5f792dfbd2": {
+          "74d7c0165cd2acb17cb3": {
             "singleVisual": {
               "visualType": "shape",
-              "objects": {}
+              "objects": {},
+              "display": {
+                "mode": "hidden"
+              }
             }
           },
-          "3cd4e4fc0b7044b3653e": {
+          "768fbbb30e30fdd69d6b": {
             "singleVisual": {
-              "visualType": "shape",
+              "visualType": "textbox",
               "objects": {}
             }
           },
@@ -95,22 +149,22 @@
               "objects": {}
             }
           },
-          "06da46ea8493184be40f": {
+          "8b10e86a695336dba780": {
             "singleVisual": {
               "visualType": "shape",
-              "objects": {}
+              "objects": {},
+              "display": {
+                "mode": "hidden"
+              }
             }
           },
-          "eebba6220aefb90d4d22": {
+          "9eaefb40956d089a01a5": {
             "singleVisual": {
               "visualType": "textbox",
-              "objects": {}
-            }
-          },
-          "e79c8c57310452c8e54c": {
-            "singleVisual": {
-              "visualType": "textbox",
-              "objects": {}
+              "objects": {},
+              "display": {
+                "mode": "hidden"
+              }
             }
           },
           "b12f1ac998ec9b27d0c5": {
@@ -118,10 +172,62 @@
               "byExpr": [
                 {
                   "name": "ae237ce430b6b3231f80",
-                  "type": "Categorical",
+                  "type": "TopN",
                   "filter": {
                     "Version": 2,
                     "From": [
+                      {
+                        "Name": "subquery",
+                        "Expression": {
+                          "Subquery": {
+                            "Query": {
+                              "Version": 2,
+                              "From": [
+                                {
+                                  "Name": "s",
+                                  "Entity": "Sheet1",
+                                  "Type": 0
+                                }
+                              ],
+                              "Select": [
+                                {
+                                  "Column": {
+                                    "Expression": {
+                                      "SourceRef": {
+                                        "Source": "s"
+                                      }
+                                    },
+                                    "Property": "The functional category"
+                                  },
+                                  "Name": "field"
+                                }
+                              ],
+                              "OrderBy": [
+                                {
+                                  "Direction": 2,
+                                  "Expression": {
+                                    "Aggregation": {
+                                      "Expression": {
+                                        "Column": {
+                                          "Expression": {
+                                            "SourceRef": {
+                                              "Source": "s"
+                                            }
+                                          },
+                                          "Property": "Index"
+                                        }
+                                      },
+                                      "Function": 5
+                                    }
+                                  }
+                                }
+                              ],
+                              "Top": 7
+                            }
+                          }
+                        },
+                        "Type": 2
+                      },
                       {
                         "Name": "s",
                         "Entity": "Sheet1",
@@ -131,72 +237,22 @@
                     "Where": [
                       {
                         "Condition": {
-                          "Not": {
-                            "Expression": {
-                              "In": {
-                                "Expressions": [
-                                  {
-                                    "Column": {
-                                      "Expression": {
-                                        "SourceRef": {
-                                          "Source": "s"
-                                        }
-                                      },
-                                      "Property": "The functional category"
+                          "In": {
+                            "Expressions": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "s"
                                     }
-                                  }
-                                ],
-                                "Values": [
-                                  [
-                                    {
-                                      "Literal": {
-                                        "Value": "'detained'"
-                                      }
-                                    }
-                                  ],
-                                  [
-                                    {
-                                      "Literal": {
-                                        "Value": "'farms'"
-                                      }
-                                    }
-                                  ],
-                                  [
-                                    {
-                                      "Literal": {
-                                        "Value": "'Free business'"
-                                      }
-                                    }
-                                  ],
-                                  [
-                                    {
-                                      "Literal": {
-                                        "Value": "'Regular'"
-                                      }
-                                    }
-                                  ],
-                                  [
-                                    {
-                                      "Literal": {
-                                        "Value": "'Risk'"
-                                      }
-                                    }
-                                  ],
-                                  [
-                                    {
-                                      "Literal": {
-                                        "Value": "'Unavoidable'"
-                                      }
-                                    }
-                                  ],
-                                  [
-                                    {
-                                      "Literal": {
-                                        "Value": "'verbatim'"
-                                      }
-                                    }
-                                  ]
-                                ]
+                                  },
+                                  "Property": "The functional category"
+                                }
+                              }
+                            ],
+                            "Table": {
+                              "SourceRef": {
+                                "Source": "subquery"
                               }
                             }
                           }
@@ -214,10 +270,25 @@
                       "Property": "The functional category"
                     }
                   },
+                  "howCreated": 1
+                },
+                {
+                  "name": "ca15fe247b40a08d00e7",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Sheet1"
+                        }
+                      },
+                      "Property": "Display_Category"
+                    }
+                  },
                   "howCreated": 0
                 },
                 {
-                  "name": "d0567b278b99a86ed858",
+                  "name": "b0cf2e8d4a40515e2dce",
                   "type": "Advanced",
                   "expression": {
                     "Aggregation": {
@@ -245,18 +316,13 @@
                 {
                   "Direction": 2,
                   "Expression": {
-                    "Aggregation": {
+                    "Column": {
                       "Expression": {
-                        "Column": {
-                          "Expression": {
-                            "SourceRef": {
-                              "Entity": "Sheet1"
-                            }
-                          },
-                          "Property": "The functional category"
+                        "SourceRef": {
+                          "Entity": "Sheet1"
                         }
                       },
-                      "Function": 5
+                      "Property": "Display_Category"
                     }
                   }
                 }
@@ -270,112 +336,18 @@
                           "Entity": "Sheet1"
                         }
                       },
-                      "Property": "The functional category"
+                      "Property": "Display_Category"
                     }
                   }
                 ]
               }
             }
           },
-          "dc33b65e34077e506c67": {
-            "singleVisual": {
-              "visualType": "textbox",
-              "objects": {}
-            }
-          },
-          "768fbbb30e30fdd69d6b": {
-            "singleVisual": {
-              "visualType": "textbox",
-              "objects": {}
-            }
-          },
-          "dea5108cbdc6ba6056c7": {
-            "singleVisual": {
-              "visualType": "shape",
-              "objects": {}
-            }
-          },
-          "f739a10a9650013a1660": {
-            "singleVisual": {
-              "visualType": "shape",
-              "objects": {}
-            }
-          },
-          "fbaf8024addb81d38c3d": {
-            "singleVisual": {
-              "visualType": "shape",
-              "objects": {}
-            }
-          },
-          "b7c41ec0827ce0019182": {
-            "singleVisual": {
-              "visualType": "image",
-              "objects": {}
-            }
-          },
-          "4ade9878e95786eea620": {
-            "singleVisual": {
-              "visualType": "shape",
-              "objects": {}
-            }
-          },
-          "c5515610d3a86054e362": {
-            "filters": {
-              "byExpr": [
-                {
-                  "name": "01645a3767d65b33509e",
-                  "type": "Advanced",
-                  "expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "Sheet1"
-                        }
-                      },
-                      "Property": "the age"
-                    }
-                  },
-                  "howCreated": 0
-                },
-                {
-                  "name": "609a585c109cefaf228f",
-                  "type": "Advanced",
-                  "expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "Sheet1"
-                        }
-                      },
-                      "Property": "Index"
-                    }
-                  },
-                  "howCreated": 0
-                }
-              ]
-            },
-            "singleVisual": {
-              "visualType": "pythonVisual",
-              "objects": {}
-            }
-          },
-          "cd64e6c966ee274eb952": {
-            "singleVisual": {
-              "visualType": "textbox",
-              "objects": {}
-            }
-          },
-          "68811e569c169cc4abb8": {
-            "singleVisual": {
-              "visualType": "textbox",
-              "objects": {}
-            }
-          },
           "ba69d17b06eb97e50269": {
             "filters": {
               "byExpr": [
                 {
-                  "name": "8b98e52badab8df911b6",
+                  "name": "aeb49631a4873b1c6136",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -390,7 +362,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "80f4108c7f9ec52369f8",
+                  "name": "36f94ea0e7cb7ed60ea7",
                   "type": "Advanced",
                   "expression": {
                     "Aggregation": {
@@ -430,172 +402,11 @@
               }
             }
           },
-          "74d7c0165cd2acb17cb3": {
-            "singleVisual": {
-              "visualType": "shape",
-              "objects": {},
-              "display": {
-                "mode": "hidden"
-              }
-            }
-          },
-          "9eaefb40956d089a01a5": {
-            "singleVisual": {
-              "visualType": "textbox",
-              "objects": {},
-              "display": {
-                "mode": "hidden"
-              }
-            }
-          },
-          "6a94faf08b56d42eecb1": {
-            "singleVisual": {
-              "visualType": "textbox",
-              "objects": {},
-              "display": {
-                "mode": "hidden"
-              }
-            }
-          },
-          "c82864b0058618303742": {
-            "singleVisual": {
-              "visualType": "textbox",
-              "objects": {},
-              "display": {
-                "mode": "hidden"
-              }
-            }
-          },
-          "d877beb97bb008e08606": {
-            "singleVisual": {
-              "visualType": "textbox",
-              "objects": {},
-              "display": {
-                "mode": "hidden"
-              }
-            }
-          },
-          "2d2f490fd47ada03938e": {
-            "singleVisual": {
-              "visualType": "textbox",
-              "objects": {},
-              "display": {
-                "mode": "hidden"
-              }
-            }
-          },
-          "387901b80174aa616253": {
-            "singleVisual": {
-              "visualType": "shape",
-              "objects": {},
-              "display": {
-                "mode": "hidden"
-              }
-            }
-          },
-          "dc9194abae1450cc0e9d": {
-            "singleVisual": {
-              "visualType": "shape",
-              "objects": {},
-              "display": {
-                "mode": "hidden"
-              }
-            }
-          },
-          "d9d738f595aa5460a10a": {
-            "singleVisual": {
-              "visualType": "shape",
-              "objects": {},
-              "display": {
-                "mode": "hidden"
-              }
-            }
-          },
-          "8b10e86a695336dba780": {
-            "singleVisual": {
-              "visualType": "shape",
-              "objects": {},
-              "display": {
-                "mode": "hidden"
-              }
-            }
-          },
-          "f08ed0a14a2b809c5578": {
-            "filters": {
-              "byExpr": [
-                {
-                  "name": "ccaf04ec4e3cdef6d6b5",
-                  "type": "Advanced",
-                  "expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "Sheet1"
-                        }
-                      },
-                      "Property": "Year"
-                    }
-                  },
-                  "howCreated": 0
-                }
-              ]
-            },
-            "singleVisual": {
-              "visualType": "slicer",
-              "objects": {
-                "merge": {
-                  "data": [
-                    {
-                      "properties": {
-                        "mode": {
-                          "expr": {
-                            "Literal": {
-                              "Value": "'Dropdown'"
-                            }
-                          }
-                        }
-                      }
-                    }
-                  ],
-                  "selection": [
-                    {
-                      "properties": {
-                        "strictSingleSelect": {
-                          "expr": {
-                            "Literal": {
-                              "Value": "false"
-                            }
-                          }
-                        }
-                      }
-                    }
-                  ]
-                }
-              },
-              "activeProjections": {
-                "Values": [
-                  {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "Sheet1"
-                        }
-                      },
-                      "Property": "Year"
-                    }
-                  }
-                ]
-              },
-              "display": {
-                "mode": "hidden"
-              }
-            }
-          },
           "c053d8d8ed32011de62c": {
             "filters": {
               "byExpr": [
                 {
-                  "name": "6acaaad4541b6d0e8d60",
+                  "name": "862701b4e46509ceaa79",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -662,11 +473,87 @@
               }
             }
           },
+          "4ade9878e95786eea620": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "b7c41ec0827ce0019182": {
+            "singleVisual": {
+              "visualType": "image",
+              "objects": {}
+            }
+          },
+          "c5515610d3a86054e362": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "31fd41fcd878d5585070",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Sheet1"
+                        }
+                      },
+                      "Property": "Index"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "6d4be5f7454085cc7017",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Sheet1"
+                        }
+                      },
+                      "Property": "the age"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "pythonVisual",
+              "objects": {}
+            }
+          },
+          "c82864b0058618303742": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {},
+              "display": {
+                "mode": "hidden"
+              }
+            }
+          },
+          "cd64e6c966ee274eb952": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "d877beb97bb008e08606": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {},
+              "display": {
+                "mode": "hidden"
+              }
+            }
+          },
           "d9444e6daa6947cd5b06": {
             "filters": {
               "byExpr": [
                 {
-                  "name": "9289893bbe5ac7b26a7a",
+                  "name": "fc49399c6c982e97d6a1",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -704,6 +591,131 @@
               "display": {
                 "mode": "hidden"
               }
+            }
+          },
+          "d9d738f595aa5460a10a": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {},
+              "display": {
+                "mode": "hidden"
+              }
+            }
+          },
+          "dc33b65e34077e506c67": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "dc9194abae1450cc0e9d": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {},
+              "display": {
+                "mode": "hidden"
+              }
+            }
+          },
+          "dea5108cbdc6ba6056c7": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "e79c8c57310452c8e54c": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "eebba6220aefb90d4d22": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "f08ed0a14a2b809c5578": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "42326d89198d448dc801",
+                  "type": "Advanced",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Sheet1"
+                        }
+                      },
+                      "Property": "Year"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Between'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "selection": [
+                    {
+                      "properties": {
+                        "strictSingleSelect": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "false"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Sheet1"
+                        }
+                      },
+                      "Property": "Year"
+                    }
+                  }
+                ]
+              },
+              "display": {
+                "mode": "hidden"
+              }
+            }
+          },
+          "f5697a34da5f792dfbd2": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "f739a10a9650013a1660": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
             }
           },
           "f9f8e9602e78c60da462": {
@@ -773,6 +785,65 @@
                         }
                       },
                       "Property": "The age group"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "advancedSlicerVisual",
+              "objects": {
+                "merge": {
+                  "selection": [
+                    {
+                      "properties": {
+                        "strictSingleSelect": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "false"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "display": {
+                "mode": "hidden"
+              }
+            }
+          },
+          "fbaf8024addb81d38c3d": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "95b38b9c48240108710b": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {},
+              "display": {
+                "mode": "hidden"
+              }
+            }
+          },
+          "575ddfd485ad439c0601": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "5439f14f606019e34ae0",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Sheet1"
+                        }
+                      },
+                      "Property": "Type of incident"
                     }
                   },
                   "howCreated": 0

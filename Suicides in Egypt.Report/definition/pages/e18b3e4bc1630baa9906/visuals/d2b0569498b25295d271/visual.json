@@ -4,10 +4,10 @@
   "position": {
     "x": 1063,
     "y": 144,
-    "z": 34000,
+    "z": 33000,
     "height": 139,
     "width": 239,
-    "tabOrder": 32000
+    "tabOrder": 31000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -27,7 +27,8 @@
                 }
               },
               "queryRef": "Sheet1.Suicides by month",
-              "nativeQueryRef": "Suicides per Month"
+              "nativeQueryRef": "Incidents per Month",
+              "displayName": "Incidents per Month"
             }
           ]
         }
@@ -102,6 +103,13 @@
               "expr": {
                 "Literal": {
                   "Value": "40D"
+                }
+              }
+            },
+            "showBlankAs": {
+              "expr": {
+                "Literal": {
+                  "Value": "'0.00'"
                 }
               }
             }

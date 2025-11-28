@@ -4,10 +4,10 @@
   "position": {
     "x": 882,
     "y": 738,
-    "z": 24000,
+    "z": 23000,
     "height": 380,
     "width": 484,
-    "tabOrder": 24000
+    "tabOrder": 23000
   },
   "visual": {
     "visualType": "barChart",
@@ -32,6 +32,24 @@
             }
           ]
         },
+        "Series": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Sheet1"
+                    }
+                  },
+                  "Property": "Type of incident"
+                }
+              },
+              "queryRef": "Sheet1.Type of incident",
+              "nativeQueryRef": "Type of incident"
+            }
+          ]
+        },
         "Y": {
           "projections": [
             {
@@ -51,7 +69,7 @@
                 }
               },
               "queryRef": "CountNonNull(Sheet1.Suicide method)",
-              "nativeQueryRef": "No. of Incidents",
+              "nativeQueryRef": "Count of Suicide method",
               "displayName": "No. of Incidents"
             }
           ]
@@ -114,6 +132,102 @@
               }
             }
           }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#FF7A7A'"
+                    }
+                  }
+                }
+              }
+            },
+            "fillTransparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "20D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "Sheet1"
+                          }
+                        },
+                        "Property": "Type of incident"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'initiation of suicide'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#FF1010'"
+                    }
+                  }
+                }
+              }
+            },
+            "fillTransparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "15D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "Sheet1"
+                          }
+                        },
+                        "Property": "Type of incident"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'suicide'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
         }
       ],
       "labels": [
@@ -149,14 +263,28 @@
             "showGradientLegend": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
                 }
               }
             },
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
+                }
+              }
+            },
+            "position": {
+              "expr": {
+                "Literal": {
+                  "Value": "'BottomCenter'"
+                }
+              }
+            },
+            "titleText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Incident Type'"
                 }
               }
             }
@@ -350,6 +478,39 @@
             }
           ]
         }
+      },
+      {
+        "name": "d3c152420412d45eb215",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Sheet1"
+                  }
+                },
+                "Property": "Suicide method"
+              }
+            },
+            "Function": 5
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "c865aeae6b04bc3d002e",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Sheet1"
+              }
+            },
+            "Property": "Type of incident"
+          }
+        },
+        "type": "Categorical"
       }
     ]
   }

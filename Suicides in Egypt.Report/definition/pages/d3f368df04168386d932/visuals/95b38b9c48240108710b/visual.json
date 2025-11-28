@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
-  "name": "dc33b65e34077e506c67",
+  "name": "95b38b9c48240108710b",
   "position": {
-    "x": 76,
-    "y": 156,
-    "z": 8000,
-    "height": 48,
-    "width": 320,
-    "tabOrder": 3000
+    "x": 925.02196778058851,
+    "y": 705.52522966316076,
+    "z": 30001,
+    "height": 45.075223006257488,
+    "width": 227.33590733590734,
+    "tabOrder": 32001
   },
   "visual": {
     "visualType": "textbox",
@@ -19,11 +19,11 @@
               {
                 "textRuns": [
                   {
-                    "value": "Incidents by Occupation",
+                    "value": "Incident Type",
                     "textStyle": {
-                      "fontWeight": "bold",
                       "fontFamily": "DIN",
-                      "fontSize": "24pt"
+                      "fontSize": "20pt",
+                      "color": "#333333"
                     }
                   }
                 ]
@@ -49,5 +49,6 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  }
+  },
+  "isHidden": true
 }

@@ -4,10 +4,10 @@
   "position": {
     "x": 651.42857142857144,
     "y": 138.57142857142858,
-    "z": 36000,
+    "z": 35000,
     "height": 148.57142857142858,
     "width": 240.00000000000003,
-    "tabOrder": 31000
+    "tabOrder": 30000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -27,7 +27,8 @@
                 }
               },
               "queryRef": "Sheet1.Average Suicides per Year",
-              "nativeQueryRef": "Suicides per Year"
+              "nativeQueryRef": "Incidents per Year",
+              "displayName": "Incidents per Year"
             }
           ]
         }
@@ -102,6 +103,13 @@
               "expr": {
                 "Literal": {
                   "Value": "40D"
+                }
+              }
+            },
+            "showBlankAs": {
+              "expr": {
+                "Literal": {
+                  "Value": "'0.00'"
                 }
               }
             }

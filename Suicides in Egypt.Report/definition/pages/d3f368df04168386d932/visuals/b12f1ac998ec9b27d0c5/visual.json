@@ -7,7 +7,7 @@
     "z": 7000,
     "height": 468,
     "width": 650,
-    "tabOrder": 3000
+    "tabOrder": 2000
   },
   "visual": {
     "visualType": "barChart",
@@ -136,6 +136,57 @@
               }
             ]
           }
+        },
+        {
+          "properties": {
+            "fillTransparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "100D"
+                }
+              }
+            },
+            "borderShow": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "borderColorMatchFill": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "Sheet1"
+                          }
+                        },
+                        "Property": "Display_Category"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'Not specified'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
         }
       ],
       "valueAxis": [
@@ -226,7 +277,28 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "ae237ce430b6b3231f80",
+        "name": "2afb0776e10d8780c954",
+        "ordinal": 0,
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Sheet1"
+                  }
+                },
+                "Property": "The functional category"
+              }
+            },
+            "Function": 5
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "d4953f4a1722bbcb003d",
+        "ordinal": 1,
         "field": {
           "Column": {
             "Expression": {
@@ -234,7 +306,7 @@
                 "Entity": "Sheet1"
               }
             },
-            "Property": "The functional category"
+            "Property": "Display_Category"
           }
         },
         "type": "TopN",
@@ -262,7 +334,7 @@
                               "Source": "s"
                             }
                           },
-                          "Property": "The functional category"
+                          "Property": "Display_Category"
                         },
                         "Name": "field"
                       }
@@ -279,7 +351,7 @@
                                     "Source": "s"
                                   }
                                 },
-                                "Property": "Index"
+                                "Property": "Display_Category"
                               }
                             },
                             "Function": 5
@@ -287,7 +359,7 @@
                         }
                       }
                     ],
-                    "Top": 7
+                    "Top": 6
                   }
                 }
               },
@@ -311,7 +383,7 @@
                             "Source": "s"
                           }
                         },
-                        "Property": "The functional category"
+                        "Property": "Display_Category"
                       }
                     }
                   ],
@@ -324,16 +396,9 @@
               }
             }
           ]
-        },
-        "howCreated": "User",
-        "objects": {
-          "general": [
-            {
-              "properties": {}
-            }
-          ]
         }
       }
-    ]
+    ],
+    "filterSortOrder": "Custom"
   }
 }

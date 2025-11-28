@@ -4,10 +4,10 @@
   "position": {
     "x": 68.333333333333343,
     "y": 878.33333333333337,
-    "z": 23000,
+    "z": 22000,
     "height": 240,
     "width": 780,
-    "tabOrder": 23000
+    "tabOrder": 22000
   },
   "visual": {
     "visualType": "columnChart",
@@ -23,13 +23,13 @@
                       "Entity": "Sheet1"
                     }
                   },
-                  "Property": "The reason for suicide"
+                  "Property": "Display_Reason"
                 }
               },
-              "queryRef": "Sheet1.The reason for suicide",
-              "nativeQueryRef": "Reason for suicide",
+              "queryRef": "Sheet1.Display_Reason",
+              "nativeQueryRef": "Reason",
               "active": true,
-              "displayName": "Reason for suicide"
+              "displayName": "Reason"
             }
           ]
         },
@@ -45,15 +45,15 @@
                           "Entity": "Sheet1"
                         }
                       },
-                      "Property": "The reason for suicide"
+                      "Property": "Display_Reason"
                     }
                   },
                   "Function": 5
                 }
               },
-              "queryRef": "CountNonNull(Sheet1.The reason for suicide)",
-              "nativeQueryRef": "No. of incidents",
-              "displayName": "No. of incidents"
+              "queryRef": "CountNonNull(Sheet1.Display_Reason)",
+              "nativeQueryRef": "No. of Incidents",
+              "displayName": "No. of Incidents"
             }
           ]
         }
@@ -62,24 +62,18 @@
         "sort": [
           {
             "field": {
-              "Aggregation": {
+              "Column": {
                 "Expression": {
-                  "Column": {
-                    "Expression": {
-                      "SourceRef": {
-                        "Entity": "Sheet1"
-                      }
-                    },
-                    "Property": "The reason for suicide"
+                  "SourceRef": {
+                    "Entity": "Sheet1"
                   }
                 },
-                "Function": 5
+                "Property": "Display_Reason"
               }
             },
             "direction": "Descending"
           }
-        ],
-        "isDefaultSort": true
+        ]
       }
     },
     "objects": {
@@ -189,6 +183,75 @@
               }
             ]
           }
+        },
+        {
+          "properties": {
+            "fillTransparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "100D"
+                }
+              }
+            },
+            "borderShow": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "borderColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#FF1010'"
+                    }
+                  }
+                }
+              }
+            },
+            "borderTransparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "20D"
+                }
+              }
+            },
+            "borderColorMatchFill": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "Sheet1"
+                          }
+                        },
+                        "Property": "Display_Reason"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'Not specified'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
         }
       ],
       "labels": [
@@ -271,7 +334,7 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "dc86333a47da4c788dc6",
+        "name": "54c75df7813419228060",
         "field": {
           "Column": {
             "Expression": {
@@ -279,7 +342,7 @@
                 "Entity": "Sheet1"
               }
             },
-            "Property": "The reason for suicide"
+            "Property": "Display_Reason"
           }
         },
         "type": "TopN",
@@ -307,7 +370,7 @@
                               "Source": "s"
                             }
                           },
-                          "Property": "The reason for suicide"
+                          "Property": "Display_Reason"
                         },
                         "Name": "field"
                       }
@@ -324,7 +387,7 @@
                                     "Source": "s"
                                   }
                                 },
-                                "Property": "Index"
+                                "Property": "Display_Reason"
                               }
                             },
                             "Function": 5
@@ -332,7 +395,7 @@
                         }
                       }
                     ],
-                    "Top": 5
+                    "Top": 6
                   }
                 }
               },
@@ -356,7 +419,7 @@
                             "Source": "s"
                           }
                         },
-                        "Property": "The reason for suicide"
+                        "Property": "Display_Reason"
                       }
                     }
                   ],
@@ -370,7 +433,27 @@
             }
           ]
         }
+      },
+      {
+        "name": "9c97d5eb93b0a46946e5",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Sheet1"
+                  }
+                },
+                "Property": "Display_Reason"
+              }
+            },
+            "Function": 5
+          }
+        },
+        "type": "Advanced"
       }
-    ]
+    ],
+    "filterSortOrder": "Custom"
   }
 }

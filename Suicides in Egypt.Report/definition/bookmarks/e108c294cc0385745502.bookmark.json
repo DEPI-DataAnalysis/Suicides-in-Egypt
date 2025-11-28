@@ -3,9 +3,7 @@
   "displayName": "Cards 2",
   "name": "e108c294cc0385745502",
   "options": {
-    "targetVisualNames": [
-      "6d3e7572a470a91dc743"
-    ],
+    "targetVisualNames": [],
     "suppressData": true
   },
   "explorationState": {
@@ -33,7 +31,7 @@
             "filters": {
               "byExpr": [
                 {
-                  "name": "db957d6997d7f11ac6f2",
+                  "name": "e79be8e6147e06a6606c",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -113,7 +111,7 @@
             "filters": {
               "byExpr": [
                 {
-                  "name": "825e2a709c6d33172f0a",
+                  "name": "7b0fa034ab061182c59c",
                   "type": "Advanced",
                   "expression": {
                     "Column": {
@@ -344,6 +342,13 @@
                                         "Value": "'Unavoidable'"
                                       }
                                     }
+                                  ],
+                                  [
+                                    {
+                                      "Literal": {
+                                        "Value": "'Others'"
+                                      }
+                                    }
                                   ]
                                 ]
                               }
@@ -366,7 +371,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "93591ef4dba3d0166d9a",
+                  "name": "f92c5d3c332b556d300b",
                   "type": "Advanced",
                   "expression": {
                     "Aggregation": {
@@ -526,7 +531,7 @@
                   "howCreated": 1
                 },
                 {
-                  "name": "34684d46a0318d02cb02",
+                  "name": "e5f6bc864a33a949080c",
                   "type": "Advanced",
                   "expression": {
                     "Aggregation": {
@@ -600,7 +605,7 @@
             "filters": {
               "byExpr": [
                 {
-                  "name": "fddf27c554d1c23aceee",
+                  "name": "736854c016ddeb453751",
                   "type": "Advanced",
                   "expression": {
                     "Measure": {
@@ -675,10 +680,7 @@
           "61f7299d10960b15a607": {
             "singleVisual": {
               "visualType": "actionButton",
-              "objects": {},
-              "display": {
-                "mode": "hidden"
-              }
+              "objects": {}
             }
           },
           "684b20ca963e2969a039": {
@@ -739,7 +741,7 @@
                   "howCreated": 1
                 },
                 {
-                  "name": "c84cbe3f4a176a4e09bb",
+                  "name": "9f2d591f060b80ec312b",
                   "type": "Advanced",
                   "expression": {
                     "Aggregation": {
@@ -793,10 +795,62 @@
               "byExpr": [
                 {
                   "name": "dc86333a47da4c788dc6",
-                  "type": "Categorical",
+                  "type": "TopN",
                   "filter": {
                     "Version": 2,
                     "From": [
+                      {
+                        "Name": "subquery",
+                        "Expression": {
+                          "Subquery": {
+                            "Query": {
+                              "Version": 2,
+                              "From": [
+                                {
+                                  "Name": "s",
+                                  "Entity": "Sheet1",
+                                  "Type": 0
+                                }
+                              ],
+                              "Select": [
+                                {
+                                  "Column": {
+                                    "Expression": {
+                                      "SourceRef": {
+                                        "Source": "s"
+                                      }
+                                    },
+                                    "Property": "The reason for suicide"
+                                  },
+                                  "Name": "field"
+                                }
+                              ],
+                              "OrderBy": [
+                                {
+                                  "Direction": 2,
+                                  "Expression": {
+                                    "Aggregation": {
+                                      "Expression": {
+                                        "Column": {
+                                          "Expression": {
+                                            "SourceRef": {
+                                              "Source": "s"
+                                            }
+                                          },
+                                          "Property": "Index"
+                                        }
+                                      },
+                                      "Function": 5
+                                    }
+                                  }
+                                }
+                              ],
+                              "Top": 5
+                            }
+                          }
+                        },
+                        "Type": 2
+                      },
                       {
                         "Name": "s",
                         "Entity": "Sheet1",
@@ -819,43 +873,11 @@
                                 }
                               }
                             ],
-                            "Values": [
-                              [
-                                {
-                                  "Literal": {
-                                    "Value": "'Family disputes'"
-                                  }
-                                }
-                              ],
-                              [
-                                {
-                                  "Literal": {
-                                    "Value": "'Financial crisis'"
-                                  }
-                                }
-                              ],
-                              [
-                                {
-                                  "Literal": {
-                                    "Value": "'Mental illness'"
-                                  }
-                                }
-                              ],
-                              [
-                                {
-                                  "Literal": {
-                                    "Value": "'Psychological crisis'"
-                                  }
-                                }
-                              ],
-                              [
-                                {
-                                  "Literal": {
-                                    "Value": "'unknown'"
-                                  }
-                                }
-                              ]
-                            ]
+                            "Table": {
+                              "SourceRef": {
+                                "Source": "subquery"
+                              }
+                            }
                           }
                         }
                       }
@@ -874,7 +896,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "15dad43d116a83cadbea",
+                  "name": "62f1eaa12d272075dce1",
                   "type": "Advanced",
                   "expression": {
                     "Aggregation": {
@@ -971,7 +993,7 @@
             "filters": {
               "byExpr": [
                 {
-                  "name": "58a28f9dbbfbc5b9a1e2",
+                  "name": "066619013cd2155a76c6",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -1021,7 +1043,7 @@
             "filters": {
               "byExpr": [
                 {
-                  "name": "355ceb532368387b04c1",
+                  "name": "03c99d9630d9e29e865b",
                   "type": "Advanced",
                   "expression": {
                     "Measure": {
@@ -1061,8 +1083,8 @@
             "filters": {
               "byExpr": [
                 {
-                  "name": "44fd516844d24d013c38",
-                  "type": "Advanced",
+                  "name": "a0913dc72bb908ce6d15",
+                  "type": "Categorical",
                   "expression": {
                     "Column": {
                       "Expression": {
@@ -1076,7 +1098,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "f099aedd871fdc4fd1a1",
+                  "name": "cd3ab1070e030313689e",
                   "type": "Advanced",
                   "expression": {
                     "Aggregation": {
@@ -1102,7 +1124,7 @@
               "objects": {},
               "orderBy": [
                 {
-                  "Direction": 2,
+                  "Direction": 1,
                   "Expression": {
                     "Aggregation": {
                       "Expression": {
@@ -1136,6 +1158,18 @@
               }
             }
           },
+          "5c25c6caf56c16766b6d": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "c6df2d3f85b6021eb652": {
+            "singleVisual": {
+              "visualType": "image",
+              "objects": {}
+            }
+          },
           "90e21ffd2bde010140ad": {
             "singleVisual": {
               "visualType": "shape",
@@ -1161,7 +1195,7 @@
                   "howCreated": 1
                 },
                 {
-                  "name": "7031c3e6d5aa9b203d47",
+                  "name": "6e36dfb608164e768547",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -1176,7 +1210,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "a331468bcd1b77f4a8b7",
+                  "name": "5b141006030546042920",
                   "type": "Advanced",
                   "expression": {
                     "Aggregation": {
@@ -1244,7 +1278,7 @@
             "filters": {
               "byExpr": [
                 {
-                  "name": "7076365d033925441264",
+                  "name": "85e19f32082110038d80",
                   "type": "Advanced",
                   "expression": {
                     "Aggregation": {
@@ -1318,8 +1352,95 @@
             "filters": {
               "byExpr": [
                 {
-                  "name": "3b896d931a2238b4b594",
-                  "type": "Categorical",
+                  "name": "2bd645cd2794016b4659",
+                  "type": "TopN",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "subquery",
+                        "Expression": {
+                          "Subquery": {
+                            "Query": {
+                              "Version": 2,
+                              "From": [
+                                {
+                                  "Name": "s",
+                                  "Entity": "Sheet1",
+                                  "Type": 0
+                                }
+                              ],
+                              "Select": [
+                                {
+                                  "Column": {
+                                    "Expression": {
+                                      "SourceRef": {
+                                        "Source": "s"
+                                      }
+                                    },
+                                    "Property": "Suicide method"
+                                  },
+                                  "Name": "field"
+                                }
+                              ],
+                              "OrderBy": [
+                                {
+                                  "Direction": 2,
+                                  "Expression": {
+                                    "Aggregation": {
+                                      "Expression": {
+                                        "Column": {
+                                          "Expression": {
+                                            "SourceRef": {
+                                              "Source": "s"
+                                            }
+                                          },
+                                          "Property": "Index"
+                                        }
+                                      },
+                                      "Function": 5
+                                    }
+                                  }
+                                }
+                              ],
+                              "Top": 7
+                            }
+                          }
+                        },
+                        "Type": 2
+                      },
+                      {
+                        "Name": "s",
+                        "Entity": "Sheet1",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "In": {
+                            "Expressions": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "s"
+                                    }
+                                  },
+                                  "Property": "Suicide method"
+                                }
+                              }
+                            ],
+                            "Table": {
+                              "SourceRef": {
+                                "Source": "subquery"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
                   "expression": {
                     "Column": {
                       "Expression": {
@@ -1327,13 +1448,13 @@
                           "Entity": "Sheet1"
                         }
                       },
-                      "Property": "Territories"
+                      "Property": "Suicide method"
                     }
                   },
                   "howCreated": 0
                 },
                 {
-                  "name": "dafebdd856fe07ba2674",
+                  "name": "02171195bdc220088800",
                   "type": "Advanced",
                   "expression": {
                     "Aggregation": {
@@ -1344,7 +1465,7 @@
                               "Entity": "Sheet1"
                             }
                           },
-                          "Property": "Territories"
+                          "Property": "Suicide method"
                         }
                       },
                       "Function": 5
@@ -1369,7 +1490,7 @@
                               "Entity": "Sheet1"
                             }
                           },
-                          "Property": "Territories"
+                          "Property": "Suicide method"
                         }
                       },
                       "Function": 5
@@ -1386,7 +1507,7 @@
                           "Entity": "Sheet1"
                         }
                       },
-                      "Property": "Territories"
+                      "Property": "Suicide method"
                     }
                   }
                 ]
@@ -1427,7 +1548,7 @@
             "filters": {
               "byExpr": [
                 {
-                  "name": "c1ffbd566dbdce6b14c2",
+                  "name": "1b40757fa50e0816b406",
                   "type": "Advanced",
                   "expression": {
                     "Measure": {
@@ -1523,16 +1644,57 @@
               "objects": {}
             }
           },
-          "c6df2d3f85b6021eb652": {
+          "1a741faf5ab8e21222d3": {
             "singleVisual": {
-              "visualType": "image",
-              "objects": {}
+              "visualType": "textbox",
+              "objects": {},
+              "display": {
+                "mode": "hidden"
+              }
             }
           },
-          "5c25c6caf56c16766b6d": {
+          "1c6b75e318541b332759": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "dc600a655035d0e90925",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Sheet1"
+                        }
+                      },
+                      "Property": "Type of incident"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
             "singleVisual": {
-              "visualType": "shape",
-              "objects": {}
+              "visualType": "advancedSlicerVisual",
+              "objects": {
+                "merge": {
+                  "selection": [
+                    {
+                      "properties": {
+                        "strictSingleSelect": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "false"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "display": {
+                "mode": "hidden"
+              }
             }
           }
         },

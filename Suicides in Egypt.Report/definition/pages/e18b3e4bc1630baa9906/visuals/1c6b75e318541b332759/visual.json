@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
-  "name": "d9444e6daa6947cd5b06",
+  "name": "1c6b75e318541b332759",
   "position": {
-    "x": 934,
-    "y": 508,
-    "z": 28000,
-    "height": 58,
-    "width": 422,
-    "tabOrder": 23000
+    "x": 933.44606836574462,
+    "y": 737.86689213673151,
+    "z": 63000,
+    "height": 56.8957603575311,
+    "width": 421.38422514796474,
+    "tabOrder": 62001
   },
   "visual": {
     "visualType": "advancedSlicerVisual",
@@ -23,11 +23,11 @@
                       "Entity": "Sheet1"
                     }
                   },
-                  "Property": "Gender"
+                  "Property": "Type of incident"
                 }
               },
-              "queryRef": "Sheet1.Gender",
-              "nativeQueryRef": "Gender"
+              "queryRef": "Sheet1.Type of incident",
+              "nativeQueryRef": "Type of incident"
             }
           ]
         }
@@ -381,12 +381,25 @@
         }
       ]
     },
-    "syncGroup": {
-      "groupName": "Gender",
-      "fieldChanges": true,
-      "filterChanges": true
-    },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "00bfa46f81668363a3a0",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Sheet1"
+              }
+            },
+            "Property": "Type of incident"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
   },
   "isHidden": true
 }
